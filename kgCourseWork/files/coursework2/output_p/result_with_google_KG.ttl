@@ -1,0 +1,744 @@
+@prefix wk:    <http://www.wikidata.org/entity/> .
+@prefix cw:    <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix go:    <http://g.co/kg/m/> .
+
+<>      a                    cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/g/11c2qtmr3s>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01m781>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0k2ljgx> .
+
+<kg:/m/010rhw>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04yjflw> , <kg:/g/11qg31pz70> .
+
+<kg:/m/02cl1>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/012h24> .
+
+<kg:/m/01nl79>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0ccvx> .
+
+<kg:/m/01vs_v8>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0ftxw>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <> .
+
+<kg:/m/0y2td>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02_286> .
+
+<kg:/m/01gbw>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/013nnt>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02z853y> .
+
+<kg:/m/09bkv>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02pq5pn> .
+
+<kg:/m/071vr>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0yk2_>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/g/11j8wvrz8z>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01_fv0>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/013mtx> .
+
+<kg:/m/0xl9t>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/07r2fz>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04_tb> .
+
+<kg:/m/01mc00>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04bcljd> .
+
+<kg:/m/0rbpv>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0cfzbq> .
+
+<kg:/m/0g9fm>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01kr8f> .
+
+<kg:/m/02z853y>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0_n5t>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/06yxd> .
+
+<kg:/m/0s4j6>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01kr8f> .
+
+<kg:/m/05zr63f>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/029wzw>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0824r> .
+
+<kg:/m/04bcw90>  a           cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/071zb> .
+
+<kg:/m/06w8btp>  a           cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04vb3> .
+
+<kg:/m/031v35>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/01kr8f>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0943hn>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01txr2>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/0zrlp>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11rfsctfg_> .
+
+<kg:/g/11bw7xd508>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0mzy7>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/01snm>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0yk2_> .
+
+<kg:/m/0xp5r>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0rwyk> .
+
+<kg:/m/0zzmc>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <> .
+
+<kg:/m/01m8q4>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04_tb> .
+
+<kg:/m/0qf5p>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02pkht5> .
+
+<kg:/m/03bt1gh>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0s4t6>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/071zb>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/09rh_>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/013d98>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/030qb3t> .
+
+<kg:/m/06yxd>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0r5gx>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0xq0z>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0hm2b> .
+
+<kg:/m/09v6kpg>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/06y9v>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11j8wvrz8z> .
+
+<kg:/m/0g8lsf>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/012h24> .
+
+<kg:/m/0hptm>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04lh1b1> , <kg:/m/05kkh> , <> .
+
+<kg:/m/0y9j>  a              cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/02ly_>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02pq5pn> .
+
+<kg:/m/02m96k>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11rfsctfg_> .
+
+<kg:/m/0rh6k>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/011v69kc> .
+
+<kg:/m/07bcn>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0cfzbq>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/010v8k>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/021k85w> .
+
+<kg:/m/04bcljd>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0198jf>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/094jv>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05kkh> .
+
+<kg:/m/0ttp3>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02pq5pn> .
+
+<kg:/m/048kw>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05p5t13> .
+
+<kg:/m/0d9jr>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05p5t13> .
+
+<kg:/m/03l2n>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/05kkh>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/02pkht5>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0xggj>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0198jf> .
+
+<kg:/m/030qb3t>  a           cw:State , cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/028212> , <kg:/m/01gbw> .
+
+<kg:/m/01m1z4>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0dg0w> .
+
+<kg:/g/11qg31pz70>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0wpyb>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0198jf> .
+
+<kg:/g/11gycszxng>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/04b8ffv>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/016ntp>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/030qb3t> .
+
+<kg:/m/0zchj>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0drh_> .
+
+<kg:/m/04jwz8>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/013mh8>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/g/11jrrh32lr>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/068p2>  a             cw:City , cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/068p2> .
+
+<kg:/m/0f04v>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0_ytw>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/0dg0w>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/g/11nmnh19hb>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0tss>  a              cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0ccvx> .
+
+<kg:/m/0xk_4>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0hm2b> .
+
+<kg:/m/02_286>  a            cw:City , cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01mwqt> , <kg:/m/0cc56> , <kg:/m/02_286> .
+
+<kg:/m/0chrx>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05jhg> .
+
+<kg:/m/0fw2y>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05zr63f> .
+
+<kg:/m/04_tb>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01smm>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0ywyv> .
+
+<kg:/m/0t_gg>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0943hn> .
+
+<kg:/m/0s4w8>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01cy_>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11rfsctfg_> .
+
+<kg:/m/0snty>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <> .
+
+<kg:/m/0ywyv>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/013mtx>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0ygbf>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11gycszxng> .
+
+<kg:/m/0__st>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01kr8f> .
+
+<kg:/m/06wxw>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01vs_v8> .
+
+<kg:/m/03p5mm>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04_tb> .
+
+<kg:/m/0zz6w>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11rfsctfg_> .
+
+<kg:/m/0tbql>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11j0b4gxj8> .
+
+<kg:/m/0xc9x>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/09rh_> .
+
+<kg:/m/04vb3>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0cv3w>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/09rh_> .
+
+<kg:/m/0xqt4>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0hm2b> .
+
+<kg:/m/07d0lh>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/017_n0>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0yj9v>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <> .
+
+<kg:/m/013hzq>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11c2qtmr3s> .
+
+<kg:/m/012h24>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0f2tj>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/030qb3t> .
+
+<kg:/m/0824r>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0rh7t>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02xry> .
+
+<kg:/m/05jhg>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/013crh>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/017_n0> .
+
+<kg:/m/03m9v2f>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0ycht>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02_286> .
+
+<kg:/m/0c1d0>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11qycwy6sv> .
+
+<kg:/m/0ccvx>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0gp2rg>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0t7rw>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11j0b4gxj8> .
+
+<kg:/m/06_02>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/01lff> .
+
+<kg:/m/03ljvf>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/04lh1b1>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0mwkp>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11rfsctfg_> .
+
+<kg:/m/0135g>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0853g>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01_1mqq> .
+
+<kg:/m/0xxm3>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11h1p7vc3l> .
+
+<kg:/m/080gnqh>  a           cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04vb3> .
+
+<kg:/m/0r2h8>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0gjbt>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0dg0w> .
+
+<kg:/m/019fh>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02_286> .
+
+<kg:/m/0242bw>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04_tb> .
+
+<kg:/m/0dclg>  a             cw:State , cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0dclg> , <kg:/g/11rfsctfg_> .
+
+<kg:/m/0ytjb>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01kr8f> .
+
+<kg:/m/0xpqr>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0hm2b> .
+
+<kg:/m/0xkhs>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/03m9v2f> .
+
+<kg:/m/0d36f>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0y9j> .
+
+<kg:/m/02pq5pn>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0rwyk>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/013mbz>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/0drh_>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0109ct>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/05p5t13>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/081mh>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0846v>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04vb3> .
+
+<kg:/m/013n96>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/0xn7b>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0129c8z6> .
+
+<kg:/m/0y62n>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02_286> .
+
+<kg:/m/0yy7z>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05kkh> .
+
+<kg:/m/0rpnf>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/02xry> .
+
+<kg:/m/0qpjt>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0y9j> .
+
+<kg:/m/0hm2b>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0xmk3>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/03ljvf> .
+
+<kg:/g/11qycwy6sv>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0rz2y>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/03bt1gh> .
+
+<kg:/m/05hjk9>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04vb3> .
+
+<kg:/m/066m2m>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01kr8f> .
+
+<kg:/m/02xry>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0l39b>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11bw7xd508> .
+
+<kg:/m/0r8g_>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/012h24> .
+
+<kg:/m/010m5w>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05kkh> .
+
+<kg:/g/11rfsctfg_>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/04yjflw>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0vzm>  a              cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/09c7w0>  a  cw:Country .
+
+<kg:/m/01qfm2>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/08f21y>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/081mh> .
+
+<kg:/m/05h66p>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0s4t6> .
+
+<kg:/g/11h1p7vc3l>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0p9z5>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04_tb> .
+
+<kg:/m/01lxwn>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04_tb> .
+
+<kg:/m/028212>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/04_z3x>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/05p5t13> .
+
+<kg:/m/0r0cp>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/0129c8z6>  a          cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/g/11r3x7z_fr>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0c_m3>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11jrrh32lr> .
+
+<kg:/m/04z_tyl>  a           cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04vb3> .
+
+<kg:/g/11j0b4gxj8>  a        cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0cc56>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01mwqt>  a            cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/01_1mqq>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0d7k1z>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/024d2> .
+
+<kg:/m/01lff>  a  cw:Country .
+
+<kg:/m/021k85w>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0k2ljgx>  a           cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/04d1sr>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0hm2b> .
+
+<kg:/m/0mzww>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11r3x7z_fr> .
+
+<kg:/m/04nnr>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/04b8ffv> .
+
+<kg:/m/011v69kc>  a          cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/010qp4>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/g/11nmnh19hb> .
+
+<kg:/m/0w1dg>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/07d0lh> .
+
+<kg:/m/024d2>  a             cw:State ;
+        cw:locatedInCountry  <kg:/m/09c7w0> .
+
+<kg:/m/0tl6d>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <> .
+
+<kg:/m/0fpzwf>  a            cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/09v6kpg> .
+
+<kg:/m/01_d4>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0s4w8> , <kg:/m/04jwz8> .
+
+<kg:/m/0267rp6>  a           cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/01vs_v8> .
+
+<kg:/m/01n32>  a             cw:City ;
+        cw:locatedInCountry  <kg:/m/01lff> ;
+        cw:locatedInState    <kg:/m/06_02> .
+
+<kg:/m/04bl77g>  a           cw:City ;
+        cw:locatedInCountry  <kg:/m/09c7w0> ;
+        cw:locatedInState    <kg:/m/0xl9t> .

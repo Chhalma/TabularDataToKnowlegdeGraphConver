@@ -1,0 +1,752 @@
+@prefix wk:    <http://www.wikidata.org/entity/> .
+@prefix cw:    <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<>      a                    wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1072657  a               wk:Q515 , wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1072657 .
+
+wk:Q2672096  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q27712436 .
+
+wk:Q1393  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q7199188  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q89233832 .
+
+wk:Q49142  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1028 .
+
+wk:Q284803  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1415 .
+
+wk:Q819  a                   wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q18383  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    <> .
+
+wk:Q523606  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q3206 .
+
+wk:Q18037755  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q65  a                    wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q6682727 , wk:Q909975 .
+
+wk:Q1924419  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q986689  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1888903 , wk:Q27712436 , wk:Q1393 .
+
+wk:Q89233832  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2736433  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q30625385 .
+
+wk:Q7198232  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1408 .
+
+wk:Q979971  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q16877522 .
+
+wk:Q49189957  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q1509  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1531980  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q812 .
+
+wk:Q780944  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q16555  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q47264  a                 wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q935334  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q3625023 , wk:Q1400 .
+
+wk:Q973729  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q593022  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q725345 .
+
+wk:Q60  a                    wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2534964  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1166 .
+
+wk:Q16877522  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2604935  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q13310 .
+
+wk:Q7442046  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q3206 .
+
+wk:Q33111  a                 wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1003798  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1400 .
+
+wk:Q956246  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7272123 .
+
+wk:Q1094060  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q844008  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q3206 .
+
+wk:Q1546  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q801  a                   wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q30625385  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q4886973  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q824 .
+
+wk:Q3206  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2746755  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q60576033  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q237 .
+
+wk:Q930114  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q724 .
+
+wk:Q7980362  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1511212  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q768007  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2283 .
+
+wk:Q1028  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1774629  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q1611830  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q754698  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q69488 .
+
+wk:Q1010244  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1400 .
+
+wk:Q754635  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q315860 .
+
+wk:Q993422  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q731938 .
+
+wk:Q4928825  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1938378  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q60 .
+
+wk:Q1110327  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q4859734  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q19826567 .
+
+wk:Q3476276  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q7592248  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1094060 .
+
+wk:Q27712436  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q116697464  a             wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q18037755 .
+
+wk:Q1428  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q3505845  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q1754454 .
+
+wk:Q12127510  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1546 .
+
+wk:Q16001762  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q801 .
+
+wk:Q49227  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1511212 .
+
+wk:Q3240735  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1400 .
+
+wk:Q6504649  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1086191 .
+
+wk:Q985648  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2672174 .
+
+wk:Q1415  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q953583  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q33111 .
+
+wk:Q16553  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q2668429  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q801 .
+
+wk:Q27685  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q731938 .
+
+wk:Q37536007  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2282019  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q69488 .
+
+wk:Q2901571  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1166 .
+
+wk:Q624809  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q812  a                   wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q7026  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q991218  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q1466541  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q725345 .
+
+wk:Q283035  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1428 .
+
+wk:Q1889293  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q27712436 .
+
+wk:Q115233531  a             wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q47264 .
+
+wk:Q6346  a                  wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1415 .
+
+wk:Q384516  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q36392 .
+
+wk:Q18920947  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2283 .
+
+wk:Q104272397  a             wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1408 .
+
+wk:Q949651  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1393 .
+
+wk:Q2136609  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q635369 .
+
+wk:Q1086117  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1408 .
+
+wk:Q515  a                   wk:Q515 ;
+        cw:locatedInCountry  wk:Q1754454 ;
+        cw:locatedInState    wk:Q3505845 .
+
+wk:Q5056822  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q22399252  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q37536007 .
+
+wk:Q122567478  a             wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1408 .
+
+wk:Q2233593  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1032 .
+
+wk:Q2229340  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1510380  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2028564  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2251519 .
+
+wk:Q909975  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1439  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2522995  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q819 .
+
+wk:Q577973  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q819 .
+
+wk:Q1864258  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q41115 .
+
+wk:Q67856751  a  wk:Q1754454 .
+
+wk:Q41115  a                 wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1297  a                  wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2672248 , wk:Q3449348 .
+
+wk:Q3408513  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q180865 .
+
+wk:Q1126267  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    <> .
+
+wk:Q180865  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q490737  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1415 .
+
+wk:Q1026008  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2924461 .
+
+wk:Q5645886  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q4928825 .
+
+wk:Q36091  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1527 .
+
+wk:Q7870324  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1028 .
+
+wk:Q19826567  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2431919  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q7013127  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q578072  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q801 .
+
+wk:Q1384  a                  wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q624809 , wk:Q731310 , wk:Q7013127 .
+
+wk:Q2428901  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1166 .
+
+wk:Q1086191  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q3449348  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q590849  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q33111 .
+
+wk:Q1888903  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q3625023  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q462184  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q801 .
+
+wk:Q1400  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q18432  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q60 .
+
+wk:Q731938  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q725345  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1550922  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1028 .
+
+wk:Q2672174  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q838759  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q69488 .
+
+wk:Q2251437  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q993431  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7980362 .
+
+wk:Q758657  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1408  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q371041  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1166 .
+
+wk:Q1166  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q3473398  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q998575  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q27712436 .
+
+wk:Q656575  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q819 .
+
+wk:Q3462011  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q31670207 .
+
+wk:Q648622  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1510380 .
+
+wk:Q5120199  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2053885 .
+
+wk:Q1032  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q2361989  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1166 .
+
+wk:Q124714  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q142117  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q24993696 , wk:Q2251437 .
+
+wk:Q315860  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q43788  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1509 .
+
+wk:Q237  a                   wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q31670207  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q16872536  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2229340 .
+
+wk:Q2028144  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1110327 .
+
+wk:Q2672248  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1375371  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q801 .
+
+wk:Q2924461  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q51695  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q303046  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q98525142 .
+
+wk:Q7628922  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1028 .
+
+wk:Q2053885  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q138578  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q2746755 .
+
+wk:Q2251519  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q7020256  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1028 .
+
+wk:Q695511  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1439 .
+
+wk:Q16869881  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q758657 .
+
+wk:Q1134230  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q33111 .
+
+wk:Q1066487  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1028 .
+
+wk:Q2283  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1754454  a  wk:Q1754454 .
+
+wk:Q731310  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q112275316  a             wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q60524877 .
+
+wk:Q22065210  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q49321152  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q3623461  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q36392 .
+
+wk:Q26224011  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q315860 .
+
+wk:Q983453  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q60 .
+
+wk:Q69488  a                 wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q635369  a                wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q7272123  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q724  a                   wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q979889  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q812 .
+
+wk:Q734134  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q13310 .
+
+wk:Q164380  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1400 .
+
+wk:Q44821  a                 wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q824  a                   wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q24993696  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1527  a                  wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q77550037  a              wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1400 .
+
+wk:Q6784534  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q60 .
+
+wk:Q98525142  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1058775  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q635369 .
+
+wk:Q948086  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q979834  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q7026 .
+
+wk:Q60524877  a              wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q13310  a                 wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q6682727  a               wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
+
+wk:Q1086321  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    wk:Q1408 .
+
+wk:Q491709  a                wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    <> .
+
+wk:Q1026685  a               wk:Q515 ;
+        cw:locatedInCountry  wk:Q67856751 ;
+        cw:locatedInState    <> .
+
+wk:Q36392  a                 wk:Q3505845 ;
+        cw:locatedInCountry  wk:Q67856751 .
