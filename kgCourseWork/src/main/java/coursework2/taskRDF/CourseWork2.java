@@ -9,9 +9,11 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.query.Dataset;
@@ -51,7 +53,9 @@ public class CourseWork2 {
 	
 	DBpediaLookup dbpedia;
 	
-	GoogleKGLookup googleKGLookup; // Assuming you have an instance of GoogleKGLookup
+	GoogleKGLookup googleKGLookup; //  instance of GoogleKGLookup
+	
+	WikidataLookup wikiKGLookup;
 
     
 	List<String[]> csv_file;
@@ -109,6 +113,8 @@ public class CourseWork2 {
 		dbpedia = new DBpediaLookup();
 		
 	    googleKGLookup = new GoogleKGLookup(); // Initialize GoogleKGLookup
+	    
+	    wikiKGLookup = new WikidataLookup();
 	    
     //wikiLookup = new 
 	
@@ -1882,9 +1888,16 @@ protected String createURIForEntity(String name, boolean useExternalURI) throws 
      stringToURI.put(name, coursework2 + processLexicalName(name));
      
      if (useExternalURI) {//We connect to online KG
-        // String uri = getExternalKGURI(name);
-         String uri = getExternalKGURIGoogle(name);
-         System.out.println(name+"Google KG " + uri);
+        //Get URI from depedia ..
+    	 // String uri = getExternalKGURI(name);
+    
+    	 //Get URI from GoogleKG...
+    	 //String uri = getExternalKGURIGoogle(name);
+         
+         //Get URI from WikiKG.....
+         String uri = getExternalKGURIWikidata(name);
+         
+         System.out.println(name+" wiki KG " + uri);
          if (!uri.equals(""))
          	stringToURI.put(name, uri);
      }
@@ -1927,58 +1940,58 @@ protected String createURIForEntity(String name, boolean useExternalURI) throws 
          
  protected String getExternalKGURIGoogle(String name) throws JsonProcessingException, IOException, URISyntaxException {
 
-     // Approximate solution: We get the entity with highest lexical similarity
-     // The use of context may be necessary in some cases
+	    // Approximate solution: We get the entity with highest lexical similarity
+	    // The use of context may be necessary in some cases
 
-     Set<KGEntity> entities = googleKGLookup.getEntities(name, "5", Collections.emptySet(), Collections.emptySet(), 0.0);
-     // print("Entities from Google KGLookup:")
-     double current_sim = -1.0;
-     String current_uri = "";
+	    Set<String> types = new HashSet<>();
+	    types.add("country");
+	    types.add("state");
+	    types.add("city");
 
-     for (KGEntity ent : entities) {
-         if (ent != null) {
-             double isub_score = isub.score(name, ent.getName());
-             if (current_sim < isub_score) {
-                 current_uri = ent.getId();
-                 current_sim = isub_score;
-             }
-         }
-     }
+	    Set<String> languages = new HashSet<>();
+	    languages.add("en");
 
-     return current_uri;
- }
+	    TreeSet<KGEntity> entities = googleKGLookup.getEntities(name, "5", types, languages, 0.8);
 
- /*protected String getExternalKGURI1(String name) throws JsonProcessingException, IOException, URISyntaxException {
-     
-     //Approximate solution: We get the entity with highest lexical similarity
-     //The use of context may be necessary in some cases        
-     
- 	Set<String> types = new HashSet<>();
- 	types.add("Country");
- 	types.add("Restaurant");
- 	types.add("City");
- 	
- 	Set<String> language = new HashSet<>();
- 	language.add("English");
- 	
+	    double current_sim = -1.0;
+	    String current_uri = "";
 
- 	TreeSet<KGEntity> entities = googleLookup.getEntities(name, "5", types, language, 0.1);
- 
- 	//print("Entities from DBPedia:")
-     double current_sim = -1.0;
-     String current_uri="";
-     
-     for (KGEntity ent : entities) {           
-         double isub_score = isub.score(name, ent.getName()); 
-         if (current_sim < isub_score) {
-             current_uri = ent.getId();
-             current_sim = isub_score;
-         }
-     }
-         
-     return current_uri;
- }
-   */
+	    for (KGEntity ent : entities) {
+	        if (ent != null) {
+	            double isub_score = isub.score(name, ent.getName());
+	            if (current_sim < isub_score) {
+	                current_uri = ent.getId();
+	                current_sim = isub_score;
+	            }
+	        }
+	    }
+
+	    return current_uri;
+	}
+
+ protected String getExternalKGURIWikidata(String name) throws JsonProcessingException, IOException, URISyntaxException {
+
+	    // Approximate solution: We get the entity with highest lexical similarity
+	    // The use of context may be necessary in some cases
+
+	    Set<KGEntity> entities = wikiKGLookup.getKGEntities(name, 5, "en");
+	    // print("Entities from Wikidata Lookup:")
+	    double current_sim = -1.0;
+	    String current_uri = "";
+
+	    for (KGEntity ent : entities) {
+	        if (ent != null) {
+	            double isub_score = isub.score(name, ent.getName());
+	            if (current_sim < isub_score) {
+	                current_uri = ent.getId();
+	                current_sim = isub_score;
+	            }
+	        }
+	    }
+
+	    return current_uri;
+	}
+
  
  public void performReasoning(String ontology_file) {
      
@@ -2060,10 +2073,13 @@ public static void main(String[] args) {
 		    else {
 		    	solution.CovertCSVToRDF();  //Reusing URIs from DBPedia
 				    
-			//Graph with only data
-			//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"with-ontology-google.ttl");
-			solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data-Google.ttl");
-				    
+			//Graph for GoogleKG data
+			//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-with-ontology-google.ttl");
+			//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data-Google.ttl");
+			
+			//Graph for WikiKG.....
+			solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data-Wiki.ttl");
+						
 		    }
 			solution.performReasoning("files/coursework2/pizza-restaurants-ontology.ttl");
 			
