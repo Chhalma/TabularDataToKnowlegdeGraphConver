@@ -51,7 +51,6 @@ public class CourseWork2 {
 	//wheater use external lookup service for URI 
 	boolean lookupExternalURI  = false;
 	
-	DBpediaLookup dbpedia;
 	
 	GoogleKGLookup googleKGLookup; //  instance of GoogleKGLookup
 	
