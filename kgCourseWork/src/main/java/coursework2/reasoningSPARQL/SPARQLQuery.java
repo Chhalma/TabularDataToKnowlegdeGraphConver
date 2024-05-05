@@ -41,11 +41,11 @@ public class SPARQLQuery {
 		 	WriteFile writer = new WriteFile(file_query_out);
 		 	
 		     
-		    String query_file = "files/coursework2/solution/query/query1.txt";
+		   String query_file = "files/coursework2/solution/query/query1.txt";
 		  // String query_file = "files/coursework2/solution/query/query2.txt";
 		  // String query_file = "files/coursework2/solution/query/query3.txt";
-		   // String query_file = "files/coursework2/solution/query/query4.txt";
-		 //   String query_file = "files/coursework2/solution/query/query5.txt";
+		  //  String query_file = "files/coursework2/solution/query/query4.txt";
+		  //String query_file = "files/coursework2/solution/query/query5.txt";
 			
 			ReadFile qfile = new ReadFile(query_file);		
 			String queryStr = qfile.readFileIntoString();
@@ -101,7 +101,7 @@ public class SPARQLQuery {
 						
 					}*/
 					//Data Process for Query 3..................
-				/*	while( res.hasNext()) {
+				/*while( res.hasNext()) {
 						if(solutions == 0) {
 							writer.writeLine("Restaurant Name, Menu Item");
 						}
@@ -115,7 +115,7 @@ public class SPARQLQuery {
 						
 					}*/
 					//Data Process for Query 4..................
-				/*  while( res.hasNext()) {
+				  /*while( res.hasNext()) {
 						if(solutions == 0) {
 							writer.writeLine("Menu Item, Avg Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 							
@@ -130,9 +130,9 @@ public class SPARQLQuery {
 												
 						writer.writeLine(itemLit.toString()+","+String.valueOf(avgPrice));
 						
-					}*/
+				  }*/
 					//Data Process for Query 5..................
-				/*	while( res.hasNext()) {
+					/*while( res.hasNext()) {
 						if(solutions == 0) {
 							writer.writeLine("Restaurant Name, Count Menu Item,Min Price,Max Price, Avg Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 							

@@ -65,10 +65,6 @@ public class CourseWork2 {
 	List<String> restaurantTypeList ;
 	List<String> menuItemTypeList;
 	List<String> ingredientTypeList;
-	List<String> meatTypeList;
-	List<String> sauceTypeList;
-	List<String> seaFoodTypeList;
-	List<String> vegetarianTypeList;
 	List<String> objectPropertyList;
 	List<String> dataPropertyList;
 	
@@ -88,8 +84,6 @@ public class CourseWork2 {
 		restaurantTypeList = new ArrayList<>();
 		menuItemTypeList = new ArrayList<>();
 		ingredientTypeList = new ArrayList<>();
-		meatTypeList = new ArrayList<>();
-		seaFoodTypeList = new ArrayList<>();
 		objectPropertyList = new ArrayList<>();
 		dataPropertyList = new ArrayList<>();
 		
@@ -110,8 +104,6 @@ public class CourseWork2 {
     
             
     //KG
-		dbpedia = new DBpediaLookup();
-		
 	    googleKGLookup = new GoogleKGLookup(); // Initialize GoogleKGLookup
 	    
 	    wikiKGLookup = new WikidataLookup();
@@ -124,16 +116,12 @@ public class CourseWork2 {
     	addToRestaurantTypeList();
         addToMenuItemTypeList();
         addToIngredientTypeList();
-        addToMeatTypeList();
-        addToSeaFoodTypeList();
-		addToObjectPropertyList();
+        addToObjectPropertyList();
 		addToDataPropertyList();
 		
 		System.out.println(restaurantTypeList);
 		System.out.println(menuItemTypeList);
 		System.out.println(ingredientTypeList);
-		System.out.println(meatTypeList);
-		System.out.println(seaFoodTypeList);
 		System.out.println(objectPropertyList);
 		System.out.println(dataPropertyList);
 		
@@ -232,105 +220,7 @@ public class CourseWork2 {
 	    			    }
 	    		
 	}
-	private void addToMeatTypeList() {
-		
-		String queryStr =
-				
-	    		 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
-	    		 "PREFIX owl: <http://www.w3.org/2002/07/owl#>"+
-	    		 "PREFIX xml: <http://www.w3.org/XML/1998/namespace>"+
-	    		 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "+
-	    		 "PREFIX cw: <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> "+
-	    			                                            
-	    			        "SELECT ?meatType "+ 
-	    			        "   WHERE {"+
-	    			        "    {  ?meat rdfs:subClassOf cw:Meat ."+
-	    				    
-	    			        "}"+
-	    			        "UNION {"+
-	    			        " ?superMeat rdfs:subClassOf cw:Meat ."+
-	    			        " ?meat rdfs:subClassOf ?superMeat . }"+
-	
-	    			        "?meat rdfs:label ?meatType"+
-	    			        "  }";    
-					    // Create the query
-	    			  Query   q = QueryFactory.create(queryStr);
-	    			    // Execute the query on the model
-	    			  QueryExecution qu = QueryExecutionFactory.create(q, model);
-	    			       
-	    			    // Execute the query and obtain the results
-	    			    try  {
-	    			        ResultSet results = qu.execSelect();
-	    			        meatTypeList.add("meat");
-	    			        while (results.hasNext()) {
-	    			            QuerySolution soln = results.next();
-	    			            RDFNode meatNode = soln.get("meatType");
-	    			            if(meatNode != null) {
-		    			            
-	    			            String meatTypeName = meatNode.toString();
-	    			            meatTypeList.add(meatTypeName.toLowerCase());
-	    			               }
-	    			        }
-	    			        } finally {
-	    			        qu.close();
-	    			    }
-
-	}
-
-private void addToSeaFoodTypeList() {
-		
-		String queryStr =
-				
-	    		 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
-	    		 "PREFIX owl: <http://www.w3.org/2002/07/owl#>"+
-	    		 "PREFIX xml: <http://www.w3.org/XML/1998/namespace>"+
-	    		 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "+
-	    		 "PREFIX cw: <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> "+
-	    			                                            
-	    			        "SELECT ?seaFood"+ 
-	    			        "   WHERE {"+
-	    			        "    {  ?seaFood rdfs:subClassOf cw:SeaFood ."+
-	    				    
-	    			        "}"+
-	    			        "UNION {"+
-	    			        " ?superSeaFood rdfs:subClassOf cw:SeaFood ."+
-	    			        " ?seaFood rdfs:subClassOf ?superSeaFood . }"+
-	    			        
-	    			        "  }";    
-					    // Create the query
-	    			  Query   q = QueryFactory.create(queryStr);
-	    			    // Execute the query on the model
-	    			  QueryExecution qu = QueryExecutionFactory.create(q, model);
-	    			       
-	    			    // Execute the query and obtain the results
-	    			    try  {
-	    			        ResultSet results = qu.execSelect();
-	    			       
-	    			        while (results.hasNext()) {
-	    			            QuerySolution soln = results.next();
-	    			            RDFNode seaFoodNode = soln.get("seaFood");
-	    			            if(seaFoodNode != null) {
-		    			            
-	    			            String seaFoodTypeString = seaFoodNode.toString();
-	    			            String[] seaFoodTypeNameArray = seaFoodTypeString.split("#");
-    					        if(seaFoodTypeNameArray.length==2) {
-    					        	String seaFoodTypeName = seaFoodTypeNameArray[1];
-    					        	 seaFoodTypeList.add(seaFoodTypeName);
-    		    			             }
-	    			           
-	    			            }
-	    			            
-	    			                
-		    			                		              
-		    			            
-	    			           }
-	    			        } finally {
-	    			        qu.close();
-	    			    }
-
-	}
-
-	private void addToIngredientTypeList() {
+		private void addToIngredientTypeList() {
 		String queryStr =
 				
 	    		 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
@@ -479,12 +369,13 @@ private void addToObjectPropertyList() {
 	    	//External URI is not used for  normal types ...
 	    	boolean useExternalURI = false;
     	// If we want to create RDF triples with ontology and data then comment next line model initialization
-    	model = ModelFactory.createDefaultModel();
+    	//model = ModelFactory.createDefaultModel();
         
 	    	//Prefixes for the serialization
     			model.setNsPrefix("cw", coursework2);
     			model.setNsPrefix("xsd", "http://www.w3.org/2001/XMLSchema#");
     			model.setNsPrefix("gkg", "http://g.co/kg/");
+    			model.setNsPrefix("wiki", "http://www.wikidata.org/entity/");
     			model.setNsPrefix("wdt", "http://www.wikidata.org/prop/direct/");
     			model.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
     			model.setNsPrefix("owl", "http://www.w3.org/2002/07/owl#");
@@ -590,12 +481,11 @@ private void addToObjectPropertyList() {
     	mappingToCreateLiteralTriple(column_index.get("country"),column_index.get("country"),rdfs+"label", XSDDatatype.XSDstring);
     	mappingToCreateLiteralTriple(column_index.get("currency"),column_index.get("currency"),rdfs+"label",XSDDatatype.XSDstring);
     	
-      // saveGraph(model, "files/coursework2/solution/RDFtriples_only_data.ttl");
-       saveGraph(model, "files/coursework2/solution/RDFtriples_with_ontology.ttl");
-   		
+     	
     }
+	    
 	// Maping for Restaurant Type....
-    protected void mappingToRestaurantTypeTriple(int subject_column_index, String class_type_uri, boolean useExternalURI) throws JsonProcessingException, IOException, URISyntaxException {
+	protected void mappingToRestaurantTypeTriple(int subject_column, String class_type_uri, boolean useExternalURI) throws JsonProcessingException, IOException, URISyntaxException {
         
    	 boolean isFirstRow = true;
     	
@@ -610,13 +500,14 @@ private void addToObjectPropertyList() {
     	        continue;
     	    }
     		//Ignore if subject column is empty.....
-    		if((row[subject_column_index] == "")) {
+    		if((row[subject_column] == "")) {
     			continue;
     		}
     		else {
        			//Create Subject String with Restaurant name with City and Postcode.....
-       			String subject = row[subject_column_index].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
-           		String subject_uri;
+       			String subject = row[subject_column].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
+           		subject = subject.replaceAll("[^a-zA-Z0-9]+", "_");
+       			String subject_uri;
            		
              	//We reuse URI for a Restaurant if it is already created.....
            		if (stringToURI.containsKey(subject))
@@ -630,13 +521,15 @@ private void addToObjectPropertyList() {
            		//Restaurant category from column 6 called categories...
            		String resCategoryName = row[6];
            		//Split possible categories based on commas, spaces, & and 'and' word......
-       			String[] allResCategory = resCategoryName.split("[,\\s]*[,|&|and]+[,\\s]*(?=[^,|&])");
-       			
+       			String[] allResCategory = resCategoryName.split(",\\s*|\\s+and\\s+|\\s*&\\s*");
+       		
        			boolean foundResType = false;
        			
        			for(String resCategory : allResCategory) {
+       				//System.out.println(resCategory);
+       	       		
        			//Check Restaurant category is in the ontology category vocabulary or not...	
-       				if(restaurantTypeList.contains(resCategory.toLowerCase())) {
+       				if(restaurantTypeList.contains(resCategory.toLowerCase().trim())) {
        					foundResType = true;
        					String resCatName = convertTocamelCase(resCategory);
        					Resource type_resource = model.createResource(class_type_uri+resCatName);
@@ -673,7 +566,8 @@ private void addToObjectPropertyList() {
        		else {
        		//Create Subject String with First Line address with City and Country.....
        			String subject = row[subject_column_index].toLowerCase()+" "+row[2]+" "+row[3];
-           		String subject_uri;
+           		subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+       			String subject_uri;
            		
            		//We reuse URI if it is already created.....
            		if (stringToURI.containsKey(subject))
@@ -717,6 +611,8 @@ private void addToObjectPropertyList() {
      	 			subject = row[subject_column].toLowerCase()+" "+row[5].toLowerCase();
        			else subject = row[subject_column];
      	     		
+       			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+       			
      	     		//We reuse URI if it is already created.....
                		if (stringToURI.containsKey(subject))
                			subject_uri=stringToURI.get(subject);
@@ -741,23 +637,21 @@ private void addToObjectPropertyList() {
    	 boolean isFirstRow = true;
     	
         for (String[] row : csv_file) {
-        	//Ignore rows with less elements than expected
-    		if (row.length<column_index.size())
+        	//Ignore rows with less elements than expected or subject column Emptty
+    		if ((row.length<column_index.size())||((row[subject_column] == "")))
     			continue;
     		//Ignore the first row as it contains column name.....
     		if (isFirstRow) {
     	        isFirstRow = false; // Update the flag for subsequent iterations
     	        continue;
     	    }
-    		//Ignore if subject column is empty.....
-    		if((row[subject_column] == "")) {
-    			continue;
-    		}
     		else {
     			// Used item name with restaurant name and located city to create unique URIs.....
     			String subject = row[subject_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
     			String subject_uri;
         		
+    			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
+    			
     			//We reuse URI if it is already created.....
            		if (stringToURI.containsKey(subject))
            			subject_uri=stringToURI.get(subject);
@@ -768,31 +662,9 @@ private void addToObjectPropertyList() {
         		Resource subject_resource = model.createResource(subject_uri);
         		
         		// Combined item description and item name to identify what type of menu item is it....
-        		String itemDescription = row[7].toLowerCase()+row[10].toLowerCase();
+        		String itemDescription = row[7].toLowerCase()+" "+row[10].toLowerCase();
         		
-        		//Check if it contain ant meat ingredients then it will be under MeatPizza...............
-        		
-        		for(String meatItem : meatTypeList ) {
-        			if(itemDescription.contains(meatItem.toLowerCase())) {
-        			//TYPE TRIPLE    		
-           		Resource type_resource = model.createResource(class_type_uri+"MeatPizza");
-           		model.add(subject_resource, RDF.type, type_resource);
-           		break;
-        			}
-        		}
-
-        		//Check if it contain any SeaFood ingredients ...............
-        		
-        		for(String seaFoodItem : seaFoodTypeList ) {
-        			if(itemDescription.contains(seaFoodItem.toLowerCase())) {
-        			//TYPE TRIPLE    		
-           		Resource type_resource = model.createResource(class_type_uri+"SeafoodPizza");
-           		model.add(subject_resource, RDF.type, type_resource);
-           		break;
-        			}
-        		}
-        		//Check if it contain any typed Pizza from the ontology Vocabulary ...............
-        		
+        	
         		for(String typedPizza : menuItemTypeList ) {
         			if(itemDescription.contains(typedPizza.toLowerCase())) {
         				//TYPE TRIPLE    		
@@ -801,19 +673,7 @@ private void addToObjectPropertyList() {
         			}
         			  			
         		}
-        		//Check if it has some ingredients and they are named menu item............
-        		for(String ingredient : ingredientTypeList ) {
-        			String ingType = ingredient.toLowerCase();
-        			if(itemDescription.contains(ingType)) {
-        				for(String typedPizza : menuItemTypeList ) {
-        	     			if(typedPizza.toLowerCase().contains(ingType)) {
-        	     				//TYPE TRIPLE    		
-        	            		Resource type_resource = model.createResource(class_type_uri+convertTocamelCase(typedPizza));
-        	            		model.add(subject_resource, RDF.type, type_resource);
-        	     			}
-          			}
-        		}
-    		}
+        	
     	}
       }
     }
@@ -838,12 +698,14 @@ private void addToObjectPropertyList() {
 	      	 			
 	      	 			
 	       	 		    String itemIngredients = row[subject_column].toLowerCase();
-	       	 			String[] itemIngList = itemIngredients.split("(,|or|with|our|and|topped|on|in)");
+	       	 			String[] itemIngList = itemIngredients.split("(,| or | with | our | and | topped | on | in | a )");
 	       	 		    for(String ingName : itemIngList) {
 	       	 		    	for(String typeIng : ingredientTypeList)
 	       	 				if(ingName.contains(typeIng.toLowerCase())) {
 	      	 					
 	      	 					String subject = ingName.trim();
+	      	 					subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
+	      	 					subject = subject.replaceAll("_+$", ""); // Remove any trailing underscores
 	      	 					String subject_uri;
 	      	 					
 	      	 					//We reuse URI if it is already created.....
@@ -893,7 +755,9 @@ private void addToObjectPropertyList() {
      		else {
      			//ItemValue URIs were created with item value and currency .....
    	 			String subject = row[subject_column_index].toLowerCase()+" "+row[9];
-   	     		String subject_uri;
+   	 			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+   	     		
+   	 			String subject_uri;
    	     		
    	     		//We reuse URI if it is already created.....
            		if (stringToURI.containsKey(subject))
@@ -932,6 +796,7 @@ private void addToObjectPropertyList() {
 	    			continue;
 	    		}
 	    		String subject = row[subject_column_index];
+	    		subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
 	    		String subject_uri;
 	    		
 	    			//We reuse URI if it is already created.....
@@ -971,9 +836,10 @@ private void addToObjectPropertyList() {
      			else {
      			// Used item name with restaurant name and located city to create menuItem as type was created combining these ...
      	 			String subject =row[subject_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
-    	     // hasValue is combined with item value and currency....
+     	 			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
+     	 			// hasValue is combined with item value and currency....
      	 			String object =  row[object_column].toLowerCase()+" "+row[9];
-
+     	 			object =  object.replaceAll("[^a-zA-Z0-9]", "_");
      	 					if (is_nan(object))
             			continue;
      	 					
@@ -1014,12 +880,14 @@ private void addToObjectPropertyList() {
      		else {
       	 			// created URIs combining with city and postcode ...
       	 			String subject = row[subject_column].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
+      	 			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
       	 			String object;
       	 			if(!lookupExternalURI)
       	       			//Creating URI for City with City and State ......
       	     	 			object = row[object_column].toLowerCase()+" "+row[5].toLowerCase();
       	       		else object = row[object_column];
-      	     	     	
+      	 			
+      	 			object =  object.replaceAll("[^a-zA-Z0-9]", "_");	
       	 			
       	 					if (is_nan(object))
              			continue;
@@ -1060,10 +928,10 @@ private void addToObjectPropertyList() {
      			else {
     	 			//MenuItem URIs for menu item created with item name, restaurant name and city.....
     	 			String subject = row[subject_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
-    	     		
+    	 			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
     	 			//Restaurant URIs restaurant name, city and postcode....
     	 			String object = row[object_column].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
-    	 			
+    	 			object =  object.replaceAll("[^a-zA-Z0-9]+", "_");
     	 			
     	 					if (is_nan(object))
            			continue;
@@ -1106,10 +974,11 @@ private void addToObjectPropertyList() {
      		else {
      			    //Restaurant URIs restaurant name, city and postcode....
      	 			String subject = row[sub_col].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
+     	 			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
      	 			
      	 			//MenuItem URIs for menu item created with item name, restaurant name and city.....
      	 			String object = row[object_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
-     	     		
+     	 			object =  object.replaceAll("[^a-zA-Z0-9]+", "_");
      	 			
      	 					if (is_nan(object))
             			continue;
@@ -1151,7 +1020,9 @@ private void addToObjectPropertyList() {
      		}    		
     		
     		String subject = row[subject_column];
+    		subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
     		String object = row[object_column];
+    		object =  object.replaceAll("[^a-zA-Z0-9]", "_");
     		
     		if (is_nan(object))
     			continue;
@@ -1197,7 +1068,8 @@ private void addToObjectPropertyList() {
      			//Creating URI for City with City and State ......
    	 			object = row[object_column].toLowerCase()+" "+row[5].toLowerCase();
      		else object = row[object_column];
-   		
+   		subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+   		object =  object.replaceAll("[^a-zA-Z0-9]", "_");
    		if (is_nan(object))
    			continue;
    		
@@ -1242,6 +1114,8 @@ private void addToObjectPropertyList() {
      		String subject = row[subject_column].toLowerCase()+" "+row[9];
     	    String object = row[object_column];
     		
+    	    subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+    	    object =  object.replaceAll("[^a-zA-Z0-9]", "_");
     		if (is_nan(object))
     			continue;
     	
@@ -1281,9 +1155,10 @@ private void addToObjectPropertyList() {
      		else {
      				//Restaurant name URIs combined with restaurant name, city and postcode.....
       	 			String subject = row[sub_col].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
-      	 			
+      	 			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
       	 			//Address URIs combined with firest line of address, city and country....
       	 			String object = row[object_column].toLowerCase()+" "+row[2]+" "+row[3];
+      	 			object =  object.replaceAll("[^a-zA-Z0-9]", "_");
       	 			if (is_nan(object))
              			continue;
              		
@@ -1327,11 +1202,12 @@ private void addToObjectPropertyList() {
    	 			String itemIngredients = row[object_column].toLowerCase();
    	 			
    	 			//List ingredients from description for comma, or, with,our,and,topped,on,in .....
-   	 			String[] itemIngList = itemIngredients.split("(,|or|with|our|and|topped|on|in)");
+   	 			String[] itemIngList = itemIngredients.split("(,| or | with | our | and | topped | on | in | a )");
    	 			
    	 			//MenuItem is with item name and reasaurant name and city.....
    	 			String subject = row[subject_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
-   	     		
+   	 			subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
+   	 			
    	 			//Retrieving URIs... 
    	 		    String subject_uri = stringToURI.get(subject);
    	 	
@@ -1341,7 +1217,8 @@ private void addToObjectPropertyList() {
 	   	 				if(ingName.contains(typeIng.toLowerCase())) {
 	   	 				
 	   	 				String object =  ingName.trim();
-	   	 				
+	   	 			    object = object.replaceAll("[^a-zA-Z0-9]+", "_");
+	   	 			    object = object.replaceAll("_+$", ""); // Remove any trailing underscores
 			   	 		//retrive URI for ingredientType ..	
 			   	 		String object_uri = stringToURI.get(object);
 			                
@@ -1380,11 +1257,12 @@ private void addToObjectPropertyList() {
       	 			
       	 			//MenuItem uri is created with item name, restaurant name and city ... 
       	 			String object = row[object_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
-      	     		
-      	 		    String object_uri = stringToURI.get(object);
+      	 			object = object.replaceAll("[^a-zA-Z0-9]+", "_");
+      	 		   
+      	 			String object_uri = stringToURI.get(object);
       	 		
       	 		    //List ingredients from description for comma, or, with,our,and,topped,on,in .....
-       	 			String[] itemIngList = itemIngredients.split("(,|or|with|our|and|topped|on|in)");
+       	 			String[] itemIngList = itemIngredients.split("(,| or | with | our | and | topped | on | in | a )");
     	 			
        	 		 //Check ingredient from the description contains ingredientType vocabulary from ontology .....
         	 		for(String ingName : itemIngList) {
@@ -1392,7 +1270,8 @@ private void addToObjectPropertyList() {
     	 				if(ingName.contains(typeIng.toLowerCase())) {
     	 				
 	    	 				String subject =  ingName.trim();
-	 		   	 			
+	    	 				subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
+	    	 				subject = subject.replaceAll("_+$", ""); // Remove any trailing underscores
 		 		   	 		String subject_uri = stringToURI.get(subject);
 		 		            
 		 		   	 		//New triple            
@@ -1427,13 +1306,14 @@ private void addToObjectPropertyList() {
  		}
  		//Address URIs combined with first line of address, city and country....
  		String subject = row[subject_column].toLowerCase()+" "+row[2]+" "+row[3];
+ 		subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
  		String object;
  		
  		if(!lookupExternalURI)
      			//Creating URI for City with City and State ......
    	 			object = row[object_column].toLowerCase()+" "+row[5].toLowerCase();
      		else object = row[object_column];
-   	
+ 		object =  object.replaceAll("[^a-zA-Z0-9]", "_");
  				if (is_nan(object))
 	    			continue;
 	    		
@@ -1475,8 +1355,9 @@ protected void mappingToCreateAddressObjectTriple(int subject_column, int object
  		
  		//Address URIs combined with first line of address, city and country....
  			String subject = row[subject_column].toLowerCase()+" "+row[2]+" "+row[3];
+ 			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
 	 		String object = row[object_column];
-	 				
+	 		object =  object.replaceAll("[^a-zA-Z0-9]", "_");		
 	    		if (is_nan(object))
 	    			continue;
 	    		
@@ -1523,7 +1404,10 @@ protected void mappingToCreateCityObjectTriple(int subject_column, int object_co
      		else subject = row[subject_column];
    	
 		    String object = row[object_col];
-		    		
+		    
+		    subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+		    object =  object.replaceAll("[^a-zA-Z0-9]", "_");
+	 		
 	    		if (is_nan(object))
 	    			continue;
 	    		
@@ -1564,7 +1448,8 @@ protected void mappingToCreateAddressLiteralTriple(int subject_column, int objec
 		}else {
 			//Address URI with first line of address, city and Country
 	 		String subject = row[subject_column].toLowerCase()+" "+row[2]+" "+row[3];
-
+	 		subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+	 		
 	 		String lit_value = row[object_column];
 	 		
 	 		if (is_nan(lit_value))
@@ -1609,7 +1494,7 @@ protected void mappingToCreateRestaurantNameLiteralTriple(int subject_column, in
 		}else {
 			//RestaurantName URI with restaurant name, city and postcode.....
 		String subject = row[subject_column].toLowerCase()+" "+row[2].toLowerCase()+" "+row[4].toLowerCase();
-		
+		subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
 		String lit_value = row[object_column];
 		
 		if (is_nan(lit_value))
@@ -1653,7 +1538,9 @@ protected void mappingToCreateMenuItemLiteralTriple(int subject_column, int obje
 		}else {
 			//MenuItem URIs with item name, Restaurant and city
 	 		String subject = row[subject_column].toLowerCase()+" at "+row[0].toLowerCase()+" in "+row[2].toLowerCase();
-			String lit_value = row[object_column];
+	 		subject =  subject.replaceAll("[^a-zA-Z0-9]+", "_");
+	 		
+	 		String lit_value = row[object_column];
 	 		
 	 		if (is_nan(lit_value))
 	 			continue;
@@ -1695,7 +1582,8 @@ protected void mappingToCreateItemValueLiteralTriple(int subject_column, int obj
 		}else {
 			//ItemValue URIs with item value and currency..
 			String subject = row[subject_column].toLowerCase()+" "+row[9];
-   	    
+			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
+			
 			String lit_value = row[object_column];
 			if(lit_value.equals("item value")||(lit_value == "")) 
 	 			continue;
@@ -1741,6 +1629,7 @@ protected void mappingToCreateRDFSLabelTriple(int subject_column,int object_colu
 			continue;
 		}else {
 			String subject = row[subject_column];
+			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
 	 		String lit_value = row[object_column];
 	 		
 	 		if (is_nan(lit_value))
@@ -1780,6 +1669,7 @@ protected void mappingToCreateLiteralTriple(int subject_column, int object_colum
 			continue;
 		}else {
 			String subject = row[subject_column];
+			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
 	 		String lit_value = row[object_column];
 	 		
 	 		if (is_nan(lit_value))
@@ -1829,7 +1719,8 @@ protected void mappingToCreateCityLiteralTriple(int subject_column, int object_c
      			//Creating URI for City with City and State ......
    	 			subject = row[subject_column].toLowerCase()+" "+row[5].toLowerCase();
      		else subject = row[subject_column];
-   	
+			
+			subject =  subject.replaceAll("[^a-zA-Z0-9]", "_");
 	 		String lit_value = row[object_column];
 	 		
 	 		if (is_nan(lit_value))
@@ -1892,12 +1783,12 @@ protected String createURIForEntity(String name, boolean useExternalURI) throws 
     	 // String uri = getExternalKGURI(name);
     
     	 //Get URI from GoogleKG...
-    	 //String uri = getExternalKGURIGoogle(name);
+    	// String uri = getExternalKGURIGoogle(name);
          
          //Get URI from WikiKG.....
          String uri = getExternalKGURIWikidata(name);
          
-         System.out.println(name+" wiki KG " + uri);
+        // System.out.println(name+" wiki KG " + uri);
          if (!uri.equals(""))
          	stringToURI.put(name, uri);
      }
@@ -1915,29 +1806,6 @@ protected String createURIForEntity(String name, boolean useExternalURI) throws 
  	return name.replaceAll(" ", "_").replaceAll("\\(", "").replaceAll("\\)", "");
  }
  
- protected String getExternalKGURI(String name) throws JsonProcessingException, IOException, URISyntaxException {
-     
-     //Approximate solution: We get the entity with highest lexical similarity
-     //The use of context may be necessary in some cases        
-     
-     Set<KGEntity> entities = dbpedia.getKGEntities(name, 5);
-     //print("Entities from DBPedia:")
-     double current_sim = -1.0;
-     String current_uri="";
-     
-     for (KGEntity ent : entities) {      
-    	 if(ent!=null) {
-         double isub_score = isub.score(name, ent.getName()); 
-         if (current_sim < isub_score) {
-             current_uri = ent.getId();
-             current_sim = isub_score;
-         }
-    	}
-     }
-         
-     return current_uri;
- }
-         
  protected String getExternalKGURIGoogle(String name) throws JsonProcessingException, IOException, URISyntaxException {
 
 	    // Approximate solution: We get the entity with highest lexical similarity
@@ -2066,8 +1934,8 @@ public static void main(String[] args) {
 			if (!useExternalURI) {
 				solution.CovertCSVToRDF();  //Fresh entity URIs
 				//Graph with only data
-				solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"only-data.ttl");
-				//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"with-ontology.ttl");
+				//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data.ttl");
+				solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-with-ontology.ttl");
 				
 			}
 		    else {
@@ -2075,17 +1943,17 @@ public static void main(String[] args) {
 				    
 			//Graph for GoogleKG data
 			//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-with-ontology-google.ttl");
-			//solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data-Google.ttl");
+		//	solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data-Google.ttl");
 			
 			//Graph for WikiKG.....
 			solution.saveGraph(solution.model, CSVFile.replace(".csv", "-"+task)+"-only-data-Wiki.ttl");
 						
 		    }
-			solution.performReasoning("files/coursework2/pizza-restaurants-ontology.ttl");
+			//solution.performReasoning("files/coursework2/pizza-restaurants-ontology.ttl");
 			
 				    
 			//#Graph with ontology triples and entailed triples
-			solution.saveGraph(solution.inf_model, CSVFile.replace(".csv", "-"+task)+"-reasoning.ttl");
+			//solution.saveGraph(solution.inf_model, CSVFile.replace(".csv", "-"+task)+"-reasoning.ttl");
 				    
 			
 		

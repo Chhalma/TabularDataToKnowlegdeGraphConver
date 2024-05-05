@@ -55,8 +55,8 @@ public class GoogleKGLookup {
 	        JSONObject response = (JSONObject) parser.parse(httpResponse.parseAsString());
 	        JSONArray elements = (JSONArray) response.get("itemListElement");
 
-	        System.out.println("Number of candidate elements: " + elements.size());
-	        System.out.println(elements);
+	     //   System.out.println("Number of candidate elements: " + elements.size());
+	      //  System.out.println(elements);
 
 	        for (Object element : elements) {
 	            JSONObject result = (JSONObject) JsonPath.read(element, "$.result");
@@ -70,10 +70,13 @@ public class GoogleKGLookup {
 	                entity.setId(result.get("@id").toString());
 	                entity.setName(result.get("name").toString());
 	                entity.setDescription(description); // Set description
+	                
 	                JSONArray typesArray = (JSONArray) result.get("@type");
-	                for (Object type : typesArray) {
-	                    if (!type.toString().equals("Thing")) {
-	                        entity.addType(type.toString());
+	                if (typesArray != null) { // Check if typesArray is null
+	                    for (Object type : typesArray) {
+	                        if (!type.toString().equals("Thing")) {
+	                            entity.addType(type.toString());
+	                        }
 	                    }
 	                }
 	                entity.setScore(score);

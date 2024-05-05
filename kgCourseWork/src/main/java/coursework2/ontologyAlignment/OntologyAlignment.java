@@ -42,6 +42,7 @@ public class OntologyAlignment {
     OntModel model;
     Map<String, OntClass> uriToClsLabel1 = new HashMap<String, OntClass>();
     Map<String, OntClass> uriToClsLabel2 = new HashMap<String, OntClass>();
+    
     Map<String, OntProperty> uriToProLabel1 = new HashMap<String, OntProperty>();
     Map<String, OntProperty> uriToProLabel2 = new HashMap<String, OntProperty>();
     private static final double SIMILARITY_THRESHOLD = 0.75; // Adjust this threshold as needed
@@ -268,34 +269,7 @@ public class OntologyAlignment {
     
     	}
     // Method to compute and save equivalences between entities of two ontologies
-    public static void main(String[] args) {
-        		    	
-	   			OntologyAlignment access = new OntologyAlignment();
-
-	   					String onto_file1 = "files/coursework2/pizza-restaurants-ontology.owl";
-		                String onto_file2 = "files/coursework2/pizza.owl";
-        		        String outputFile = "files/coursework2/solution/pizza-cw-equivalences.ttl";
-        		        String refFile = "files/coursework2/reference-mappings-pizza.ttl";
-
-        		        try {
-        		            access.loadOntologyFromLocalFile(onto_file1);
-        		            OntModel model1 = access.model;
-        		           
-        		            access.loadOntologyFromLocalFile(onto_file2);
-        		            OntModel model2 = access.model;
-
-        		            access.computeAndSaveEquivalences(model1, model2, outputFile);
-        		            access.computePrecisionAndRecall(outputFile,refFile);
-
-        		        } catch (FileNotFoundException e) {
-        		            e.printStackTrace();
-        		        } catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-        		    }
-
-    public void computePrecisionAndRecall(String alignmentFile, String referenceFile) throws IOException {
+      public void computePrecisionAndRecall(String alignmentFile, String referenceFile) throws IOException {
         // Load datasets
 		Dataset alignmentDataset = RDFDataMgr.loadDataset(alignmentFile, RDFLanguages.TURTLE);
 		Dataset referenceDataset = RDFDataMgr.loadDataset(referenceFile, RDFLanguages.TURTLE);
@@ -350,5 +324,33 @@ public class OntologyAlignment {
         RDFNode object = stmt.getObject();
         return model.contains(subject, predicate, object);
     }
-    
+    public static void main(String[] args) {
+    	
+			OntologyAlignment access = new OntologyAlignment();
+
+					String onto_file1 = "files/coursework2/pizza-restaurants-ontology.owl";
+                String onto_file2 = "files/coursework2/pizza.owl";
+		        String outputFile = "files/coursework2/solution/pizza-cw-equivalences.ttl";
+		       
+		        String refFile = "files/coursework2/reference-mappings-pizza.ttl";
+
+		        try {
+		            access.loadOntologyFromLocalFile(onto_file1);
+		            OntModel model1 = access.model;
+		           
+		            access.loadOntologyFromLocalFile(onto_file2);
+		            OntModel model2 = access.model;
+
+		            access.computeAndSaveEquivalences(model1, model2, outputFile);
+		            access.computePrecisionAndRecall(outputFile,refFile);
+
+		        } catch (FileNotFoundException e) {
+		            e.printStackTrace();
+		        } catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+
+  
 }

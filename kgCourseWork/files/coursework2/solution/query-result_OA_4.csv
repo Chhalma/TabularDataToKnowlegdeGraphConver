@@ -1,31 +1,31 @@
 Menu Item,Ingredient
-Barbecue Chicken Pizza,bbq chicken breast
-Caeser Sald Pizza,grilled chicken
-Pizza Toppings,ated chicken breast
-Chicken Club Pizza,sliced chicken breast
-Homemade Mexican Pizza,choice of bbq chicken
-Chicken Parmigiana Pizza,fried chicken
-Mexico City Grill Pizza,choice of shredded chicken
-Chicken Verde Artisan Crust Pizza,chicken
-Buffalo Pizza,crispy breaded chicken
-Monte Carlo Pizza (white),chicken breast
-Buffalo Chicken Pizza,grilled chicken breast smothered
-Ohio River Pizza,chicken
-Chicken Pizza,breaded chicken
-Artichoke Chicken Pizza,sliced chicken breast
-Chicken Wing Pizza,grilled chicken
-Stinger Pizza,chunks of breaded chicken
-Mexico City Pizza,shredded chicken
-Bbq Chicken Pizza,chicken
-California Pizza,sliced grilled chicken breast
-Specialty Pizza Toppings,grilled chicken
-Buffalo Chicken Pizza,chicken
+Caeser Sald Pizza,grilled_chicken
+Pizza Toppings,marinated_chicken_breast
+Mediterranean Pizza,chicken_breast
+California Pizza,sliced_grilled_chicken_breast
+Homemade Mexican Pizza,your_choice_of_bbq_chicken
 Cheesesteak Stuffed Cheese Pizza,chicken
-Rancher Pizza,chicken
-Bbq Chicken Pizza,diced chicken breast
+Mexico City Grill Pizza,your_choice_of_shredded_chicken
+Bbq Chicken Pizza,diced_chicken_breast
+Chicken Parmigiana Pizza,fried_chicken
+Mexico City Pizza,shredded_chicken
+Buffalo Chicken Pizza,chicken
+Bbq Chicken Pizza,chicken
+Buffalo Chicken Pizza,grilled_chicken_breast_smothered
 Mexican Pizza,chicken
-Chicken Parmesan Pizza,chunks of breaded chicken covered
-Buffalo Chicken Pizza,grilled chicken
-Bbq Chicken Pizza,grilled chicken breast
-Pizza Rolls,chicken parmigiana
-Mediterranean Pizza,chicken breast
+Ohio River Pizza,chicken
+Chicken Pizza,breaded_chicken
+Chicken Wing Pizza,grilled_chicken
+Chicken Parmesan Pizza,chunks_of_breaded_chicken_covered
+Buffalo Chicken Pizza,grilled_chicken
+Specialty Pizza Toppings,grilled_chicken
+Stinger Pizza,chunks_of_breaded_chicken
+Chicken Verde Artisan Crust Pizza,chicken
+Artichoke Chicken Pizza,with_sliced_chicken_breast
+Bbq Chicken Pizza,grilled_chicken_breast
+Monte Carlo Pizza (white),chicken_breast
+Barbecue Chicken Pizza,with_bbq_chicken_breast
+Chicken Club Pizza,sliced_chicken_breast
+Buffalo Pizza,crispy_breaded_chicken
+Rancher Pizza,chicken
+Pizza Rolls,chicken_parmigiana

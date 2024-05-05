@@ -22,11 +22,8 @@ import org.nd4j.linalg.api.ndarray.INDArray;
 
 public class Owl2VecEmbedding {
 	
-	
 	public Owl2VecEmbedding () throws NumberFormatException, IOException {
-		
-		
-		
+	
 	}
 	
 	
@@ -35,18 +32,10 @@ public class Owl2VecEmbedding {
 		//https://deeplearning4j.konduit.ai/language-processing/word2vec
 		
 		
-		Word2Vec w2vModel = WordVectorSerializer.readWord2VecModel("files/coursework2/solution/embedding/cw_java_config1.embeddings");
+		//Word2Vec w2vModel = WordVectorSerializer.readWord2VecModel("files/coursework2/solution/embedding/cw_java_config1.embeddings");
+		Word2Vec w2vModel = WordVectorSerializer.readWord2VecModel("files/coursework2/solution/embedding/cw_java_config2.embeddings");
 		
-		//Word2Vec w2vModel = WordVectorSerializer.readWord2VecModel("files/coursework2/solution/embedding/cw.embeddings");
-		//Word2Vec w2vModel = WordVectorSerializer.readWordVectors(new File("files_lab9/pizza.embeddings.txt"));
-
-		//Attempts to read python generated vectors
-		//Word2Vec w2vModel = WordVectorSerializer.readWordVectors(new File("files_lab9/pizza.embeddings.txt"));
-		//Word2Vec w2vModel = WordVectorSerializer.readWord2VecModel(new File("files_lab9/pizza.embeddings.bin"));
-		//InputStream word2vecmodelFile = new FileInputStream("files_lab9/pizza.embeddings.bin");
-		//Word2Vec w2vModel = WordVectorSerializer.readBinaryModel(word2vecmodelFile, false, true);
-		//Word2Vec w2vModel = WordVectorSerializer.readWord2Vec(word2vecmodelFile, false);
-				
+						
 				
 		Map<String, Double> similarityMap1 = new HashMap<>();
 		Map<String, Double> similarityMap2 = new HashMap<>();
@@ -88,7 +77,7 @@ public class Owl2VecEmbedding {
         		"http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#VegetarianPizza",
         		
         		"http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#AmericanRestaurant",
-        		"http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#Pepperoni",
+        		"http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hasIngredient",
            
         };
         
@@ -106,6 +95,7 @@ public class Owl2VecEmbedding {
 	
 	
 	
+	@SuppressWarnings("deprecation")
 	public void createEmbeddings(String file_sentences) throws IOException {
 		//Reused from https://deeplearning4j.konduit.ai/language-processing/word2vec#loading-data
 		
@@ -127,7 +117,7 @@ public class Owl2VecEmbedding {
 		
 		
 		//Building mode;Configuration 1...
-		Word2Vec w2vModel = new Word2Vec.Builder()
+		/*Word2Vec w2vModel = new Word2Vec.Builder()
 		        .minWordFrequency(3)
 		        .epochs(3)
 		        .iterations(5)
@@ -138,39 +128,30 @@ public class Owl2VecEmbedding {
 		        .iterate(iter)
 		        .tokenizerFactory(t)
 		        .build();
-		
+		*/
 		// Building mode; Configuration 2.....
-	/*	Word2Vec w2vModel = new Word2Vec.Builder()
+		Word2Vec w2vModel = new Word2Vec.Builder()
 		        .minWordFrequency(1)   // Adjust the minimum word frequency to filter out infrequent words
 		        .epochs(5)            // Increase the number of training epochs
 		        .iterations(10)         // Set the number of iterations per epoch
-		        .layerSize(300)        // Increase the size of the hidden layer
-		        .seed(100)             // Change the random seed for reproducibility
-		        .negativeSample(30)    // Adjust the number of negative samples for training
+		        .layerSize(200)        // Increase the size of the hidden layer
+		        .seed(60)             // Change the random seed for reproducibility
+		        .negativeSample(25)    // Adjust the number of negative samples for training
 		        .windowSize(10)        // Increase the window size for context
 		        .iterate(iter)
 		        .tokenizerFactory(t)
 		        .build(); 
 
-		*/
+		
 
 		//Fitting model
 		w2vModel.fit();
 		
 		
 		
-		//Evaluate model
-		System.out.println(w2vModel.wordsNearest("pizza", 10));
-		System.out.println(w2vModel.similarity("pizza", "meat"));
-		
-		
-		//Vector for a given word
-		w2vModel.getWordVector("pizza");
-		
-		
 		//Save vectors
-	//	WordVectorSerializer.writeWord2VecModel(w2vModel, "files/coursework2/solution/embedding/cw_java_config1.embeddings");
-	//	WordVectorSerializer.writeWordVectors(w2vModel, "files/coursework2/solution/embedding/cw_java_config1.embeddings.txt");
+		//WordVectorSerializer.writeWord2VecModel(w2vModel, "files/coursework2/solution/embedding/cw_java_config1.embeddings");
+		//WordVectorSerializer.writeWordVectors(w2vModel, "files/coursework2/solution/embedding/cw_java_config1.embeddings.txt");
 		
 		//Save fo rconfiguration 2...
 		WordVectorSerializer.writeWord2VecModel(w2vModel, "files/coursework2/solution/embedding/cw_java_config2.embeddings");
@@ -189,7 +170,7 @@ public class Owl2VecEmbedding {
 		try {
 			Owl2VecEmbedding  owl2Vec = new Owl2VecEmbedding ();
 			
-		//	owl2Vec.createEmbeddings("files/coursework2/solution/embedding/document_sentences.txt");
+			owl2Vec.createEmbeddings("files/coursework2/solution/embedding/document_sentences.txt");
 			
 			//From the step above
 			owl2Vec.loadPrecomputedEmbeddings();

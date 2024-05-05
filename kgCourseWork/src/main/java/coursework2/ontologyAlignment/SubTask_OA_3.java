@@ -69,7 +69,7 @@ public class SubTask_OA_3 {
 		String cw_onto = "files/coursework2/pizza-restaurants-ontology.ttl";
 		String pizza_onto = "files/coursework2/pizza.ttl";
 		String computedAlignment = "files/coursework2/solution/pizza-cw-equivalences.ttl"; 
-		String cw_data = "files/coursework2/solution/IN3067-INM713_coursework_data_pizza_500-taskRDFonly-data.ttl";
+		String cw_data = "files/coursework2/solution/IN3067-INM713_coursework_data_pizza_500-taskRDF-only-data.ttl";
 		//String cw_data = "files/coursework2/output_p/result.ttl";
 	 		    
 		solution.performReasoning(cw_onto, pizza_onto, computedAlignment, cw_data);			
