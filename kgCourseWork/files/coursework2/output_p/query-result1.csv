@@ -1,23 +1,75 @@
 Restaurant Name, Menu Item, Price
-taco pronto,taco pizza,1.99
-uno pizzeria & grill - sturbridge,pizza skins,2.99
-euro pizzeria,specialty pizza toppings,3.5
-la hacienda,mexican pizza,3.75
-fazoli's,pizza slice,4.0
-euro pizzeria,pizza rolls,5.49
-pirate's cove,pizza bread,5.79
-greek's pizzeria,mexico city pizza,5.99
-pie in the sky,cheese pizza,6.95
-greek's pizzeria,mexico city grill pizza,7.99
-little caesars pizza,3 meat treat pizza,8.0
-hungry howie's pizza,meat eaters pizza,8.0
-tavern at the inn,berlin pizza,8.75
-zios italian kitchen - olathe,artichoke chicken pizza,8.79
-zios italian kitchen - olathe,barbecue chicken pizza,8.79
-zios italian kitchen - olathe,chicken club pizza,8.79
-rancho viejo mexican grill,mexican pizza,8.8
-giovanni's pizza and pasta,bbq chicken pizza,8.99
-zios italian kitchen - olathe,california pizza,8.99
-little caesars pizza,ultimate supreme pizza,9.0
-mexican gardens,homemade mexican pizza,9.99
-spicy pizza world,spicy chicken pizza,9.99
+russo's pizza,taco pizza,12.25
+california pizza kitchen,white pizza,12.49
+uno pizzeria & grill,chicken verde artisan crust pizza,12.49
+uno pizzeria & grill,napoli artisan crust pizza,12.49
+pirate's cove,cheese pizza,12.5
+tavern at the inn,shrimp scampi pizza,12.5
+walnut grille,artichoke and sweet potato pizza,12.5
+walnut grille,tuscan fig and oyster mushroom pizza,12.5
+kyoto sushi,spicy tuna pizza or spicy salmon pizza,12.95
+mellow mushroom pizza bakers,b.b.q. chicken pizza,12.95
+mellow mushroom pizza bakers,hawaiian pizza,12.95
+mellow mushroom pizza bakers,roasted vegetable pizza,12.95
+mellow mushroom pizza bakers,spicy meat pizza,12.95
+mellow mushroom pizza bakers,the everything pizza,12.95
+nino's trattoria & pizzeria,old fashion tomato pizza,12.95
+antonio's pizza,deluxe pizza,12.99
+antonio's pizza,supreme deluxe pizza,12.99
+antonio's pizza,veggie or meat deluxe pizza,12.99
+fox's pizza den,cheese pizza,12.99
+uno pizzeria & grill,prosciutto arugula artisan crust pizza,12.99
+milanos pizza,hawaiian pizza,13.0
+oh' brian's on the green,the reuben pizza,13.0
+oh' brian's on the green,white pizza,13.0
+the brentwood,pizza, mushroom,13.0
+the brentwood,pizza, puttenesca,13.0
+austin's pizza,the white pizza,13.39
+milanos pizza,veggie pizza,13.5
+nypd pizza,pizza margherita,13.95
+salerno's pizza restaurant,chicken wing pizza,13.95
+austin's pizza,las pizzas del fuego,13.99
+doubledave's pizza works,cheese pizza,13.99
+prima pizza,white pizza,13.99
+d. vino italian food and wine bar - monte carlo,caprese pizza,14.0
+gran morsi,arugula pizza (seasonal),14.0
+gran morsi,autumn pizza (seasonal),14.0
+gran morsi,bronx bomber pizza,14.0
+gran morsi,bruha pizza,14.0
+gran morsi,carne pizza,14.0
+gran morsi,fennel pizza (seasonal),14.0
+gran morsi,formaggi pizza,14.0
+gran morsi,funghi pizza,14.0
+gran morsi,margherita pizza,14.0
+gran morsi,pesto pizza (seasonal),14.0
+lineage - permanently closed,wood oven pizza,14.0
+milanos pizza,primavera pizza,14.0
+milanos pizza,sicilian style pizza,14.0
+riccardo's pizza,capelli pizza,14.0
+riccardo's pizza,white pizza,14.0
+the hamilton inn,truffled egg pizza,14.0
+milanos pizza,buffalo chicken pizza,14.25
+california pizza kitchen,the original bbq chicken pizza,14.29
+california pizza kitchen,the original bbq chicken pizza,14.29
+austin's pizza,bacon pizzaburger,14.49
+nino's trattoria & pizzeria,trenton tomato pizza,14.95
+bronson strike zone,large supreme pizza.,14.99
+euro pizzeria,pizza marinara,14.99
+hungry howie's pizza,large the works pizza,15.0
+icon grill,pepperoni pizza,15.0
+icon grill,spinach artichoke pizza,15.0
+icon grill,wood fire grilled pizza,15.0
+spagio,garden pizza,15.0
+the brentwood,pizza, salami piccante,15.0
+the brentwood,pizza, white truffle meat sauce,15.0
+tower hill tavern,pizza,15.0
+town pub,vodka sauce pizza,15.0
+cristy's pizza,margherita pizza (on honey wheat dough),15.3
+milanos pizza,carne pizza,15.5
+zpizza,pizza or calzone,15.75
+mediterraneo ristorante,margherita pizza,15.95
+nino's trattoria & pizzeria,margherita pizza,15.95
+nino's trattoria & pizzeria,old fashion pizza,15.95
+nino's trattoria & pizzeria,sicilian pizza,15.95
+original giorgio's,white pizza,15.95
+peter piper pizza,pizza mexicana,15.99

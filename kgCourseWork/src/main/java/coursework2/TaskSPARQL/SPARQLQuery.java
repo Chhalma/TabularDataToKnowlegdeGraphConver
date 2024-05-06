@@ -13,6 +13,7 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.riot.RDFLanguages;
 
@@ -26,8 +27,8 @@ public class SPARQLQuery {
 	
 	SPARQLQuery(){
 		
-		 //String reasoningFile = "files/coursework2/solution/IN3067-INM713_coursework_data_pizza_500-taskRDF-reasoning.ttl";
-		  String reasoningFile = "files/coursework2/output_p/result_with_ontology-reasoning.ttl";
+		//String reasoningFile = "files/coursework2/solution/IN3067-INM713_coursework_data_pizza_500-taskRDF-reasoning.ttl";
+		 String reasoningFile = "files/coursework2/output_p/result_with_ontology-reasoning.ttl";
 			
 		   Dataset extendedDataset = RDFDataMgr.loadDataset(reasoningFile, RDFLanguages.TURTLE);
 		   this.model = extendedDataset.getDefaultModel();
@@ -41,11 +42,13 @@ public class SPARQLQuery {
 		 	WriteFile writer = new WriteFile(file_query_out);
 		 	
 		     
-		 	String query_file = "files/coursework2/solution/query/query1_p.txt";
 		 //	String query_file = "files/coursework2/solution/query/query1.txt";
-		  // String query_file = "files/coursework2/solution/query/query2.txt";
-		  // String query_file = "files/coursework2/solution/query/query3.txt";
-		  //  String query_file = "files/coursework2/solution/query/query4.txt";
+		 	
+		 //	String query_file = "files/coursework2/solution/query/query2_p.txt";
+		 	
+		 	 // String query_file = "files/coursework2/solution/query/query2.txt";
+		    // String query_file = "files/coursework2/solution/query/query3.txt";
+		      String query_file = "files/coursework2/solution/query/query4.txt";
 		  //String query_file = "files/coursework2/solution/query/query5.txt";
 			
 			ReadFile qfile = new ReadFile(query_file);		
@@ -61,8 +64,9 @@ public class SPARQLQuery {
 					ResultSet res = qe.execSelect();
 						
 					int solutions = 0;
-			// Data Process for Query 1 for Pravija..........................			
-				while( res.hasNext()) {
+					
+							// Data Process for Query 1 .........................			
+			/*	while( res.hasNext()) {
 						if(solutions == 0) {
 							writer.writeLine("Restaurant Name, Menu Item, Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 							
@@ -80,9 +84,30 @@ public class SPARQLQuery {
 						
 						writer.writeLine(resName.toString()+","+itemLit.toString()+","+String.valueOf(price));//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 						
-					}
-				// Data Process for Query 1..........................			
+					} */
+				//Data Process for Query 2 Pravija..................
 			/*	while( res.hasNext()) {
+					if(solutions == 0) {
+						writer.writeLine("Restaurant Name, Menu Item,Price, Discounted Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
+						
+					}
+					solutions++;
+					QuerySolution soln = res.next();
+					//RDFNode city = soln.get("?city");
+					Literal  resName = soln.getLiteral("?restName");
+					Literal  itemLit = soln.getLiteral("?menuItem");
+					Literal priceLit = soln.getLiteral("?price");
+					Literal discountedPriceLiteral = soln.getLiteral("?discountedPrice");
+					
+					double price = priceLit.getDouble();
+					double discountedPrice = discountedPriceLiteral.getDouble();
+											
+					writer.writeLine(resName.toString()+","+itemLit.toString()+","+String.valueOf(price)+","+String.valueOf(discountedPrice));
+					
+				}*/
+
+				// Data Process for Query 2..........................			
+				/*while( res.hasNext()) {
 						if(solutions == 0) {
 							writer.writeLine("Restaurant Name, Menu Item,Ingredient Name, Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 							
@@ -101,28 +126,8 @@ public class SPARQLQuery {
 						
 						writer.writeLine(resName.toString()+","+itemLit.toString()+","+ingName.toString()+","+String.valueOf(price));//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 						
-					}*/
-			
-					//Data Process for Query 2..................
-				/*	while( res.hasNext()) {
-						if(solutions == 0) {
-							writer.writeLine("Restaurant Name, Menu Item,Price, Discounted Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
-							
-						}
-						solutions++;
-						QuerySolution soln = res.next();
-						//RDFNode city = soln.get("?city");
-						Literal  resName = soln.getLiteral("?restName");
-						Literal  itemLit = soln.getLiteral("?itemName");
-						Literal priceLit = soln.getLiteral("?price");
-						Literal discountedPriceLiteral = soln.getLiteral("?discountedPrice");
-						
-						double price = priceLit.getDouble();
-						double discountedPrice = discountedPriceLiteral.getDouble();
-												
-						writer.writeLine(resName.toString()+","+itemLit.toString()+","+String.valueOf(price)+","+String.valueOf(discountedPrice));
-						
-					}*/
+					}*/			
+					
 					//Data Process for Query 3..................
 				/*while( res.hasNext()) {
 						if(solutions == 0) {
@@ -138,22 +143,21 @@ public class SPARQLQuery {
 						
 					}*/
 					//Data Process for Query 4..................
-				  /*while( res.hasNext()) {
+				  while( res.hasNext()) {
 						if(solutions == 0) {
 							writer.writeLine("Menu Item, Avg Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 							
 						}
 						solutions++;
 						QuerySolution soln = res.next();
-						
-						Literal  itemLit = soln.getLiteral("?itemName");
+						Literal  restLit = soln.getLiteral("?restName");
 						Literal avgPriceLit = soln.getLiteral("?averagePrice");
 						double avgPrice = avgPriceLit.getDouble();
 						
 												
-						writer.writeLine(itemLit.toString()+","+String.valueOf(avgPrice));
+						writer.writeLine(restLit.toString()+","+String.valueOf(avgPrice));
 						
-				  }*/
+				  }
 					//Data Process for Query 5..................
 					/*while( res.hasNext()) {
 						if(solutions == 0) {
@@ -185,7 +189,7 @@ public class SPARQLQuery {
 		
 		
 		
-					System.out.println(solutions + " pizza satisfying the query.");
+					System.out.println(solutions + " triples satisfying the query.");
 					    
 				} finally {
 					qe.close();
@@ -205,9 +209,9 @@ public class SPARQLQuery {
 		 		    
 			//SPARQL results into CSV
 			try {
-				//solution.performSPARQLQuery(solution.model, "files/coursework2/solution/SPARQL-query-result1.csv");				    
+				//solution.performSPARQLQuery(solution.model, "files/coursework2/solution/SPARQL-query-result4.csv");				    
 				
-				solution.performSPARQLQuery(solution.model, "files/coursework2/output_p/query-result1.csv");
+				solution.performSPARQLQuery(solution.model, "files/coursework2/output_p/query-result4.csv");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -1,18 +1,15 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cw: <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#>
 
-SELECT ?restName ?itemName ?price ?discountedPrice
+SELECT ?restName ?menuItem ?ingName ?price
 WHERE {
-  ?pizza a cw:Pizza .
-  ?pizza cw:itemName ?itemName .
-  ?pizza cw:servedInRestaurant ?restaurant .
-  ?pizza cw:hasValue ?itemValue .
-  ?itemValue cw:amount ?price .
+  ?pizza a cw:MeatPizza .
+  ?pizza cw:itemName ?menuItem .
+  ?pizza cw:servedInRestaurant/cw:restaurantName ?restName .
+  ?pizza cw:hasIngredient/rdfs:label ?ingName .
+  ?pizza cw:hasValue/cw:amount ?price .
   
-  ?restaurant cw:restaurantName ?restName.
-  FILTER (?price > 12.0 && ?price < 16.0)
-  BIND((?price * 0.9) AS ?discountedPrice)
+  
+  FILTER (contains(?ingName, "chicken" ) )
 } ORDER BY ?price

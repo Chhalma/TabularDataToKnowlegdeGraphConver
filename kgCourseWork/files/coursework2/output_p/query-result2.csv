@@ -1,75 +1,125 @@
-Restaurant Name, Menu Item,Price, Discounted Price
-russo's pizza,taco pizza,12.25,11.025
-uno pizzeria & grill,chicken verde artisan crust pizza,12.49,11.241
-uno pizzeria & grill,napoli artisan crust pizza,12.49,11.241
-california pizza kitchen,white pizza,12.49,11.241
-walnut grille,artichoke and sweet potato pizza,12.5,11.25
-pirate's cove,cheese pizza,12.5,11.25
-tavern at the inn,shrimp scampi pizza,12.5,11.25
-walnut grille,tuscan fig and oyster mushroom pizza,12.5,11.25
-mellow mushroom pizza bakers,b.b.q. chicken pizza,12.95,11.655
-mellow mushroom pizza bakers,hawaiian pizza,12.95,11.655
-nino's trattoria & pizzeria,old fashion tomato pizza,12.95,11.655
-mellow mushroom pizza bakers,roasted vegetable pizza,12.95,11.655
-mellow mushroom pizza bakers,spicy meat pizza,12.95,11.655
-kyoto sushi,spicy tuna pizza or spicy salmon pizza,12.95,11.655
-mellow mushroom pizza bakers,the everything pizza,12.95,11.655
-fox's pizza den,cheese pizza,12.99,11.691
-antonio's pizza,deluxe pizza,12.99,11.691
-uno pizzeria & grill,prosciutto arugula artisan crust pizza,12.99,11.691
-antonio's pizza,supreme deluxe pizza,12.99,11.691
-antonio's pizza,veggie or meat deluxe pizza,12.99,11.691
-milanos pizza,hawaiian pizza,13.0,11.700000000000001
-the brentwood,pizza, mushroom,13.0,11.700000000000001
-the brentwood,pizza, puttenesca,13.0,11.700000000000001
-oh' brian's on the green,the reuben pizza,13.0,11.700000000000001
-oh' brian's on the green,white pizza,13.0,11.700000000000001
-austin's pizza,the white pizza,13.39,12.051
-milanos pizza,veggie pizza,13.5,12.15
-salerno's pizza restaurant,chicken wing pizza,13.95,12.555
-nypd pizza,pizza margherita,13.95,12.555
-doubledave's pizza works,cheese pizza,13.99,12.591000000000001
-austin's pizza,las pizzas del fuego,13.99,12.591000000000001
-prima pizza,white pizza,13.99,12.591000000000001
-gran morsi,arugula pizza (seasonal),14.0,12.6
-gran morsi,autumn pizza (seasonal),14.0,12.6
-gran morsi,bronx bomber pizza,14.0,12.6
-gran morsi,bruha pizza,14.0,12.6
-riccardo's pizza,capelli pizza,14.0,12.6
-d. vino italian food and wine bar - monte carlo,caprese pizza,14.0,12.6
-gran morsi,carne pizza,14.0,12.6
-gran morsi,fennel pizza (seasonal),14.0,12.6
-gran morsi,formaggi pizza,14.0,12.6
-gran morsi,funghi pizza,14.0,12.6
-gran morsi,margherita pizza,14.0,12.6
-gran morsi,pesto pizza (seasonal),14.0,12.6
-milanos pizza,primavera pizza,14.0,12.6
-milanos pizza,sicilian style pizza,14.0,12.6
-the hamilton inn,truffled egg pizza,14.0,12.6
-riccardo's pizza,white pizza,14.0,12.6
-lineage - permanently closed,wood oven pizza,14.0,12.6
-milanos pizza,buffalo chicken pizza,14.25,12.825000000000001
-california pizza kitchen,the original bbq chicken pizza,14.29,12.860999999999999
-california pizza kitchen,the original bbq chicken pizza,14.29,12.860999999999999
-austin's pizza,bacon pizzaburger,14.49,13.041
-nino's trattoria & pizzeria,trenton tomato pizza,14.95,13.455
-bronson strike zone,large supreme pizza.,14.99,13.491
-euro pizzeria,pizza marinara,14.99,13.491
-spagio,garden pizza,15.0,13.5
-hungry howie's pizza,large the works pizza,15.0,13.5
-icon grill,pepperoni pizza,15.0,13.5
-tower hill tavern,pizza,15.0,13.5
-the brentwood,pizza, salami piccante,15.0,13.5
-the brentwood,pizza, white truffle meat sauce,15.0,13.5
-icon grill,spinach artichoke pizza,15.0,13.5
-town pub,vodka sauce pizza,15.0,13.5
-icon grill,wood fire grilled pizza,15.0,13.5
-cristy's pizza,margherita pizza (on honey wheat dough),15.3,13.770000000000001
-milanos pizza,carne pizza,15.5,13.950000000000001
-zpizza,pizza or calzone,15.75,14.175
-mediterraneo ristorante,margherita pizza,15.95,14.355
-nino's trattoria & pizzeria,margherita pizza,15.95,14.355
-nino's trattoria & pizzeria,old fashion pizza,15.95,14.355
-nino's trattoria & pizzeria,sicilian pizza,15.95,14.355
-original giorgio's,white pizza,15.95,14.355
-peter piper pizza,pizza mexicana,15.99,14.391
+Restaurant Name, Menu Item
+brando's pizza,stinger pizza
+brando's pizza,stinger pizza
+euro pizzeria,pizza rolls
+euro pizzeria,pizza rolls
+abo's pizza,meat lover pizza
+bravo pizza hollywood,meat lover pizza
+fazoli's,whole pizza
+taco pronto,taco pizza
+nino's trattoria & pizzeria,taco pizza
+fazoli's,pizza slice
+riccardo's pizza,large pizza cheese
+gran morsi,carne pizza
+hungry howie's pizza,meat eaters pizza
+peter piper pizza,pizza mexicana
+giovanni's pizza and pasta,thai chicken pizza
+mi pal's deli,pepperoni chicken pizza steak
+gran morsi,fennel pizza (seasonal)
+joey's n y pizza,supreme pizza
+zios italian kitchen - olathe,california pizza
+zios italian kitchen - olathe,california pizza
+town pub,chicken parmesan pizza
+brando's pizza,chicken parmesan pizza
+brando's pizza,chicken parmesan pizza
+gran morsi,autumn pizza (seasonal)
+rivertowne north shore,the youghigheny pizza
+pirate's cove,pizza bread
+mexican gardens,homemade mexican pizza
+mexican gardens,homemade mexican pizza
+original giorgio's,sicilian pizza
+nino's trattoria & pizzeria,cheesesteak stuffed cheese pizza
+nino's trattoria & pizzeria,cheesesteak stuffed cheese pizza
+frank's pizzeria,b.l.t. pizza
+mellow mushroom pizza bakers,spicy meat pizza
+gran morsi,bronx bomber pizza
+the brentwood,pizza, white truffle meat sauce
+uno pizzeria & grill - sturbridge,thin crust or deep dish pizza
+steinway pizza,regular chicken pizza
+zios italian kitchen - olathe,chicken club pizza
+zios italian kitchen - olathe,chicken club pizza
+nino's trattoria & pizzeria,rancher pizza
+nino's trattoria & pizzeria,rancher pizza
+nino's trattoria & pizzeria,chicken alfredo pizza
+asian fusion pizza house,eastern delight pizza
+asian fusion pizza house,eastern delight pizza
+the fire den,arthichoke heart chicken pizza
+the fire den,greek chicken pizza
+spicy pizza world,spicy chicken pizza
+spicy pizza world,spicy chicken pizza
+mi pal's deli,chicken pizza steak
+mellow mushroom pizza bakers,b.b.q. chicken pizza
+greek's pizzeria,gourmet meat pizzatm
+kennebunk house of pizza,chicken supreme pizza
+rivertowne north shore,ohio river pizza
+rivertowne north shore,ohio river pizza
+lineage - permanently closed,wood oven pizza
+greek's pizzeria,gourmet chicken ranch pizza
+antonio's pizza,supreme deluxe pizza
+rivertowne north shore,blast furnace pizza
+oh' brian's on the green,the reuben pizza
+greek's pizzeria,mexico city pizza
+greek's pizzeria,mexico city pizza
+cristy's pizza,blt pizza
+bravo pizza hollywood,hawaiian pizza
+the fire den,garlic chicken pizza
+uno pizzeria & grill - sturbridge,pizza skins
+mellow mushroom pizza bakers,the everything pizza
+zios italian kitchen - olathe,artichoke chicken pizza
+zios italian kitchen - olathe,artichoke chicken pizza
+nino's trattoria & pizzeria,chicken wing pizza
+nino's trattoria & pizzeria,chicken wing pizza
+salerno's pizza restaurant,chicken wing pizza
+antonio's pizza,deluxe pizza
+little caesars pizza,ultimate supreme pizza
+tavern at the inn,berlin pizza
+austin's pizza,las pizzas del fuego
+original giorgio's,mediterranean pizza
+original giorgio's,mediterranean pizza
+country bagel bakery,pizza bagel
+uno pizzeria & grill,chicken verde artisan crust pizza
+uno pizzeria & grill,chicken verde artisan crust pizza
+euro pizzeria,specialty pizza toppings
+euro pizzeria,specialty pizza toppings
+rivertowne north shore,buffalo chicken pizza
+frank's pizzeria,buffalo chicken pizza
+frank's pizzeria,buffalo chicken pizza
+original giorgio's,buffalo chicken pizza
+original giorgio's,buffalo chicken pizza
+milanos pizza,buffalo chicken pizza
+enterprise deli,chicken pizza
+steinway pizza,caeser sald pizza
+steinway pizza,caeser sald pizza
+the fire den,pesto chicken pizza
+giovanni's pizza and pasta,pesto chicken pizza
+icon grill,smoked chicken bbq pizza
+zios italian kitchen - olathe,barbecue chicken pizza
+zios italian kitchen - olathe,barbecue chicken pizza
+harry's pizza,meat lovers pizza
+original giorgio's,greek pizza
+icon grill,bbq chicken pizza
+original giorgio's,bbq chicken pizza
+original giorgio's,bbq chicken pizza
+frank's pizzeria,bbq chicken pizza
+frank's pizzeria,bbq chicken pizza
+giovanni's pizza and pasta,bbq chicken pizza
+giovanni's pizza and pasta,bbq chicken pizza
+imo's pizza,bbq chicken pizza
+the fire den,bbq chicken pizza
+little caesars pizza,3 meat treat pizza
+rivertowne north shore,reuben pizza
+riccardo's pizza,chicken parmigiana pizza
+riccardo's pizza,chicken parmigiana pizza
+nino's trattoria & pizzeria,chicken parmigiana pizza
+california pizza kitchen,the original bbq chicken pizza
+california pizza kitchen,the original bbq chicken pizza
+la hacienda,mexican pizza
+rancho viejo mexican grill,mexican pizza
+casa-rica,mexican pizza
+casa-rica,mexican pizza
+original giorgio's,monte carlo pizza (white)
+original giorgio's,monte carlo pizza (white)
+uno pizzeria & grill,prosciutto arugula artisan crust pizza
+greek's pizzeria,mexico city grill pizza
+greek's pizzeria,mexico city grill pizza
+imo's pizza,meat pizza

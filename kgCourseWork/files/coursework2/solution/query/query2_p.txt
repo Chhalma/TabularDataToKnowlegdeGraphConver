@@ -1,7 +1,7 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX cw: <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#>
 
-SELECT ?restName ?menuItem ?price
+SELECT ?restName ?menuItem ?price ?discountedPrice
 WHERE {
   ?pizza a cw:Pizza .
   ?pizza cw:itemName ?menuItem .
@@ -9,4 +9,5 @@ WHERE {
   ?pizza cw:hasValue/cw:amount ?price .
   
   FILTER (?price > 12.0 && ?price < 16.0)
+  BIND((?price * 0.9) AS ?discountedPrice)
 } ORDER BY ?price

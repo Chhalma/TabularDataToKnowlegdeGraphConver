@@ -1,7 +1,4 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xml: <http://www.w3.org/XML/1998/namespace>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cw: <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#>
 
 SELECT ?restName ?itemName 
@@ -11,16 +8,11 @@ WHERE {
   }
   UNION{
   ?pizza a cw:MeatPizza .
+  }
    MINUS {
-      ?pizza cw:hasIngredient ?ing .
-      ?ing a cw:Ham.
+      ?pizza cw:hasIngredient/a cw:Ham .
       
     }
- 
-  }
-  
- ?pizza cw:itemName ?itemName .
- ?pizza cw:servedInRestaurant ?restaurant .
-  ?restaurant cw:restaurantName ?restName.
-  ?pizza cw:hasIngredient ?ing .
+  ?pizza cw:itemName ?itemName .
+  ?pizza cw:servedInRestaurant/cw:restaurantName ?restName.
  } 

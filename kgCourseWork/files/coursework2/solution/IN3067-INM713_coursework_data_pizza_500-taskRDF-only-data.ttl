@@ -109,7 +109,7 @@ cw:Ontario_Street  a  cw:State ;
         rdfs:label  "Ontario Street" .
 
 cw:rollatini_pizza_at_tomato_basil_in_fairfield
-        a                      cw:Pizza ;
+        a                      cw:serves;
         cw:hasIngredient       cw:fresh_mozzarella , cw:tomato_sauce , cw:basil , cw:ricotta_cheese , cw:breaded_eggplant ;
         cw:hasValue            cw:10_99_USD ;
         cw:itemName            "Rollatini Pizza" ;

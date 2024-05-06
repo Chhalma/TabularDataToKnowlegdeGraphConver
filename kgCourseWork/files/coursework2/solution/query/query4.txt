@@ -1,18 +1,12 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xml: <http://www.w3.org/XML/1998/namespace>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX cw: <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#>
 
-SELECT ?itemName (AVG(?price) AS ?averagePrice)
+SELECT ?restName (AVG(?price) AS ?averagePrice)
 WHERE {
-  ?pizza a cw:Pizza ;
-  		cw:itemName ?itemName;
-       cw:hasValue ?value .
-       
-  ?value cw:amount ?price .
-  
-  
+?rest a cw:Restaurant.
+?rest cw:restaurantName ?restName.
+?rest cw:servesMenuItem/cw:hasValue/cw:amount ?price .
+ 
 }
-GROUP BY ?itemName
+GROUP BY ?restName
 HAVING (AVG(?price) > 15)

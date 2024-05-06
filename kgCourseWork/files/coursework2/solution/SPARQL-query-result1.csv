@@ -1,26 +1,80 @@
-Restaurant Name, Menu Item,Ingredient Name, Price
-Keyme,Pizza Toppings,marinated_chicken_breast,1.75
-Euro Pizzeria,Specialty Pizza Toppings,grilled_chicken,3.5
-Enterprise Deli,Chicken Pizza,breaded_chicken,5.25
-Euro Pizzeria,Pizza Rolls,chicken_parmigiana,5.49
-Greek's Pizzeria,Mexico City Pizza,shredded_chicken,5.99
-Suraya's - Grill and Fried Chicken,Buffalo Pizza,crispy_breaded_chicken,7.99
-Greek's Pizzeria,Mexico City Grill Pizza,your_choice_of_shredded_chicken,7.99
-Zios Italian Kitchen - Olathe,Chicken Club Pizza,sliced_chicken_breast,8.79
-Zios Italian Kitchen - Olathe,Barbecue Chicken Pizza,with_bbq_chicken_breast,8.79
-Zios Italian Kitchen - Olathe,Artichoke Chicken Pizza,with_sliced_chicken_breast,8.79
-Giovanni's Pizza and Pasta,Bbq Chicken Pizza,diced_chicken_breast,8.99
-Zios Italian Kitchen - Olathe,California Pizza,sliced_grilled_chicken_breast,8.99
-Mexican Gardens,Homemade Mexican Pizza,your_choice_of_bbq_chicken,9.99
-Uno Pizzeria & Grill,Chicken Verde Artisan Crust Pizza,chicken,12.49
-Riccardo's Pizza,Chicken Parmigiana Pizza,fried_chicken,16.95
-Original Giorgio's,Buffalo Chicken Pizza,grilled_chicken,16.95
-Original Giorgio's,Bbq Chicken Pizza,grilled_chicken_breast,16.95
-Original Giorgio's,Mediterranean Pizza,chicken_breast,17.95
-Original Giorgio's,Monte Carlo Pizza (white),chicken_breast,17.95
-Rivertowne North Shore,Ohio River Pizza,chicken,17.99
-Rivertowne North Shore,Buffalo Chicken Pizza,grilled_chicken_breast_smothered,17.99
-Steinway Pizza,Caeser Sald Pizza,grilled_chicken,18.5
-Nino's Trattoria & Pizzeria,Rancher Pizza,chicken,19.95
-Nino's Trattoria & Pizzeria,Chicken Wing Pizza,grilled_chicken,19.95
-Nino's Trattoria & Pizzeria,Cheesesteak Stuffed Cheese Pizza,chicken,22.95
+Restaurant Name, Menu Item, Price
+Russo's Pizza,Taco Pizza,12.25
+California Pizza Kitchen,White Pizza,12.49
+Uno Pizzeria & Grill,Chicken Verde Artisan Crust Pizza,12.49
+Uno Pizzeria & Grill,Napoli Artisan Crust Pizza,12.49
+Pirate's Cove,Cheese Pizza,12.5
+Tavern At The Inn,Shrimp Scampi Pizza,12.5
+Walnut Grille,Artichoke and Sweet Potato Pizza,12.5
+Walnut Grille,Tuscan Fig and Oyster Mushroom Pizza,12.5
+Kyoto Sushi,Spicy Tuna Pizza or Spicy Salmon Pizza,12.95
+Mellow Mushroom Pizza Bakers,B.b.q. Chicken Pizza,12.95
+Mellow Mushroom Pizza Bakers,Hawaiian Pizza,12.95
+Mellow Mushroom Pizza Bakers,Roasted Vegetable Pizza,12.95
+Mellow Mushroom Pizza Bakers,Spicy Meat Pizza,12.95
+Mellow Mushroom Pizza Bakers,The Everything Pizza,12.95
+Nino's Trattoria & Pizzeria,Old Fashion Tomato Pizza,12.95
+Antonio's Pizza,Deluxe Pizza,12.99
+Antonio's Pizza,Supreme Deluxe Pizza,12.99
+Antonio's Pizza,Veggie or Meat Deluxe Pizza,12.99
+Fox's Pizza Den,Cheese Pizza,12.99
+Uno Pizzeria & Grill,Prosciutto Arugula Artisan Crust Pizza,12.99
+Milanos Pizza,Hawaiian Pizza,13.0
+Oh' Brian's on the Green,The Reuben Pizza,13.0
+Oh' Brian's on the Green,White Pizza,13.0
+The Brentwood,Pizza, Mushroom,13.0
+The Brentwood,Pizza, Puttenesca,13.0
+Austin's Pizza,The White Pizza,13.39
+Milanos Pizza,Veggie Pizza,13.5
+Nypd Pizza,Pizza Margherita,13.95
+Salerno's Pizza Restaurant,Chicken Wing Pizza,13.95
+Austin's Pizza,Las Pizzas Del Fuego,13.99
+Doubledave's Pizza Works,Cheese Pizza,13.99
+Prima Pizza,White Pizza,13.99
+D. Vino Italian Food and Wine Bar - Monte Carlo,Caprese Pizza,14.0
+Gran Morsi,Arugula Pizza (seasonal),14.0
+Gran Morsi,Autumn Pizza (seasonal),14.0
+Gran Morsi,Bronx Bomber Pizza,14.0
+Gran Morsi,Bruha Pizza,14.0
+Gran Morsi,Carne Pizza,14.0
+Gran Morsi,Fennel Pizza (seasonal),14.0
+Gran Morsi,Formaggi Pizza,14.0
+Gran Morsi,Funghi Pizza,14.0
+Gran Morsi,Margherita Pizza,14.0
+Gran Morsi,Pesto Pizza (seasonal),14.0
+Lineage - Permanently Closed,Wood Oven Pizza,14.0
+Milanos Pizza,Primavera Pizza,14.0
+Milanos Pizza,Sicilian Style Pizza,14.0
+Riccardo's Pizza,Capelli Pizza,14.0
+Riccardo's Pizza,White Pizza,14.0
+The Hamilton Inn,Truffled Egg Pizza,14.0
+Milanos Pizza,Buffalo Chicken Pizza,14.25
+California Pizza Kitchen,The Original Bbq Chicken Pizza,14.29
+California Pizza Kitchen,The Original Bbq Chicken Pizza,14.29
+Austin's Pizza,Bacon Pizzaburger,14.49
+Nino's Trattoria & Pizzeria,Trenton Tomato Pizza,14.95
+Pravija's  Pizza Place,Meat Pizza,14.95
+Bronson Strike Zone,Large Supreme Pizza.,14.99
+Euro Pizzeria,Pizza Marinara,14.99
+Hungry Howie's Pizza,Large The Works Pizza,15.0
+Icon Grill,Pepperoni Pizza,15.0
+Icon Grill,Spinach Artichoke Pizza,15.0
+Icon Grill,Wood Fire Grilled Pizza,15.0
+Spagio,Garden Pizza,15.0
+The Brentwood,Pizza, Salami Piccante,15.0
+The Brentwood,Pizza, White Truffle Meat Sauce,15.0
+Tower Hill Tavern,Pizza,15.0
+Town Pub,Vodka Sauce Pizza,15.0
+Cristy's Pizza,Margherita Pizza (on Honey Wheat Dough),15.3
+Milanos Pizza,Carne Pizza,15.5
+Zpizza,Pizza or Calzone,15.75
+Burgers & Cupcakes,Margherita Pizza,15.95
+Burgers & Cupcakes,Marinara Pizza,15.95
+Burgers & Cupcakes,Provencal Pizza,15.95
+Mediterraneo Ristorante,Margherita Pizza,15.95
+Nino's Trattoria & Pizzeria,Margherita Pizza,15.95
+Nino's Trattoria & Pizzeria,Old Fashion Pizza,15.95
+Nino's Trattoria & Pizzeria,Sicilian Pizza,15.95
+Original Giorgio's,White Pizza,15.95
+Chhalma's Place,Vegan Pizza,15.99
+Peter Piper Pizza,Pizza Mexicana,15.99
