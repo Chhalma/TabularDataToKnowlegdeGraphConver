@@ -1,30 +1,26 @@
-Restaurant Name, Menu Item,Price
-Keyme,Pizza Toppings,1.75
-Taco Pronto,Taco Pizza,1.99
-Uno Pizzeria & Grill - Sturbridge,Pizza Skins,2.99
-Euro Pizzeria,Specialty Pizza Toppings,3.5
-La Hacienda,Mexican Pizza,3.75
-Fazoli's,Pizza Slice,4.0
-Philly's Subs,Pizza,4.99
-Sluggers Sports Bar,Pizza Logs,4.99
-Enterprise Deli,Chicken Pizza,5.25
-Euro Pizzeria,Pizza Rolls,5.49
-Potbelly Sandwich Shop,Pizza Sandwich,5.55
-Pirate's Cove,Pizza Bread,5.79
-Greek's Pizzeria,Mexico City Pizza,5.99
-The Spud Spot,Pizza,6.49
-Pie In The Sky,Cheese Pizza,6.95
-The Italian Oven,Pizza Fries,6.99
-Suraya's - Grill and Fried Chicken,Buffalo Pizza,7.99
-Greek's Pizzeria,Mexico City Grill Pizza,7.99
-Little Caesars Pizza,3 Meat Treat Pizza,8.0
-Tavern At The Inn,Berlin Pizza,8.75
-Zios Italian Kitchen - Olathe,Artichoke Chicken Pizza,8.79
-Zios Italian Kitchen - Olathe,Barbecue Chicken Pizza,8.79
-Zios Italian Kitchen - Olathe,Chicken Club Pizza,8.79
-Rancho Viejo Mexican Grill,Mexican Pizza,8.8
-Giovanni's Pizza and Pasta,Bbq Chicken Pizza,8.99
-Zios Italian Kitchen - Olathe,California Pizza,8.99
-Little Caesars Pizza,Ultimate Supreme Pizza,9.0
-Chhalma's Place,B.l.t. Pizza,9.99
-Mexican Gardens,Homemade Mexican Pizza,9.99
+Restaurant Name, Menu Item,Ingredient Name, Price
+Keyme,Pizza Toppings,marinated_chicken_breast,1.75
+Euro Pizzeria,Specialty Pizza Toppings,grilled_chicken,3.5
+Enterprise Deli,Chicken Pizza,breaded_chicken,5.25
+Euro Pizzeria,Pizza Rolls,chicken_parmigiana,5.49
+Greek's Pizzeria,Mexico City Pizza,shredded_chicken,5.99
+Suraya's - Grill and Fried Chicken,Buffalo Pizza,crispy_breaded_chicken,7.99
+Greek's Pizzeria,Mexico City Grill Pizza,your_choice_of_shredded_chicken,7.99
+Zios Italian Kitchen - Olathe,Chicken Club Pizza,sliced_chicken_breast,8.79
+Zios Italian Kitchen - Olathe,Barbecue Chicken Pizza,with_bbq_chicken_breast,8.79
+Zios Italian Kitchen - Olathe,Artichoke Chicken Pizza,with_sliced_chicken_breast,8.79
+Giovanni's Pizza and Pasta,Bbq Chicken Pizza,diced_chicken_breast,8.99
+Zios Italian Kitchen - Olathe,California Pizza,sliced_grilled_chicken_breast,8.99
+Mexican Gardens,Homemade Mexican Pizza,your_choice_of_bbq_chicken,9.99
+Uno Pizzeria & Grill,Chicken Verde Artisan Crust Pizza,chicken,12.49
+Riccardo's Pizza,Chicken Parmigiana Pizza,fried_chicken,16.95
+Original Giorgio's,Buffalo Chicken Pizza,grilled_chicken,16.95
+Original Giorgio's,Bbq Chicken Pizza,grilled_chicken_breast,16.95
+Original Giorgio's,Mediterranean Pizza,chicken_breast,17.95
+Original Giorgio's,Monte Carlo Pizza (white),chicken_breast,17.95
+Rivertowne North Shore,Ohio River Pizza,chicken,17.99
+Rivertowne North Shore,Buffalo Chicken Pizza,grilled_chicken_breast_smothered,17.99
+Steinway Pizza,Caeser Sald Pizza,grilled_chicken,18.5
+Nino's Trattoria & Pizzeria,Rancher Pizza,chicken,19.95
+Nino's Trattoria & Pizzeria,Chicken Wing Pizza,grilled_chicken,19.95
+Nino's Trattoria & Pizzeria,Cheesesteak Stuffed Cheese Pizza,chicken,22.95

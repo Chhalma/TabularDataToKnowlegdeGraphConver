@@ -1,4 +1,4 @@
-package coursework2.reasoningSPARQL;
+package coursework2.TaskSPARQL;
 
 
 import java.io.FileNotFoundException;

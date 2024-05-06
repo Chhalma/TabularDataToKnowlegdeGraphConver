@@ -1,4 +1,4 @@
-package coursework2.reasoningSPARQL;
+package coursework2.TaskSPARQL;
 
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -26,8 +26,8 @@ public class SPARQLQuery {
 	
 	SPARQLQuery(){
 		
-		 String reasoningFile = "files/coursework2/solution/IN3067-INM713_coursework_data_pizza_500-taskRDF-reasoning.ttl";
-		//   String reasoningFile = "files/coursework2/output_p/result_with_ontology-reasoning.ttl";
+		 //String reasoningFile = "files/coursework2/solution/IN3067-INM713_coursework_data_pizza_500-taskRDF-reasoning.ttl";
+		  String reasoningFile = "files/coursework2/output_p/result_with_ontology-reasoning.ttl";
 			
 		   Dataset extendedDataset = RDFDataMgr.loadDataset(reasoningFile, RDFLanguages.TURTLE);
 		   this.model = extendedDataset.getDefaultModel();
@@ -41,7 +41,8 @@ public class SPARQLQuery {
 		 	WriteFile writer = new WriteFile(file_query_out);
 		 	
 		     
-		   String query_file = "files/coursework2/solution/query/query1.txt";
+		 	String query_file = "files/coursework2/solution/query/query1_p.txt";
+		 //	String query_file = "files/coursework2/solution/query/query1.txt";
 		  // String query_file = "files/coursework2/solution/query/query2.txt";
 		  // String query_file = "files/coursework2/solution/query/query3.txt";
 		  //  String query_file = "files/coursework2/solution/query/query4.txt";
@@ -60,10 +61,10 @@ public class SPARQLQuery {
 					ResultSet res = qe.execSelect();
 						
 					int solutions = 0;
-			// Data Process for Query 1..........................			
+			// Data Process for Query 1 for Pravija..........................			
 				while( res.hasNext()) {
 						if(solutions == 0) {
-							writer.writeLine("Restaurant Name, Menu Item,Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
+							writer.writeLine("Restaurant Name, Menu Item, Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 							
 						}
 						solutions++;
@@ -80,6 +81,28 @@ public class SPARQLQuery {
 						writer.writeLine(resName.toString()+","+itemLit.toString()+","+String.valueOf(price));//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
 						
 					}
+				// Data Process for Query 1..........................			
+			/*	while( res.hasNext()) {
+						if(solutions == 0) {
+							writer.writeLine("Restaurant Name, Menu Item,Ingredient Name, Price");//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
+							
+						}
+						solutions++;
+						QuerySolution soln = res.next();
+						//RDFNode city = soln.get("?city");
+						Literal  resName = soln.getLiteral("?restName");
+						Literal  itemLit = soln.getLiteral("?menuItem");
+						Literal ingName = soln.getLiteral("?ingName");
+						Literal priceLit = soln.getLiteral("?price");
+						
+						//RDFNode avgRes = soln.get("?avgRestaurant");
+						
+						double price = priceLit.getDouble();
+						
+						writer.writeLine(resName.toString()+","+itemLit.toString()+","+ingName.toString()+","+String.valueOf(price));//+","+String.valueOf(discountedPrice));//+","+population.toString()+",");
+						
+					}*/
+			
 					//Data Process for Query 2..................
 				/*	while( res.hasNext()) {
 						if(solutions == 0) {
@@ -182,9 +205,9 @@ public class SPARQLQuery {
 		 		    
 			//SPARQL results into CSV
 			try {
-				solution.performSPARQLQuery(solution.model, "files/coursework2/solution/SPARQL-query-result1.csv");				    
+				//solution.performSPARQLQuery(solution.model, "files/coursework2/solution/SPARQL-query-result1.csv");				    
 				
-				//solution.performSPARQLQuery(solution.model, "files/coursework2/output_p/query-result1.csv");
+				solution.performSPARQLQuery(solution.model, "files/coursework2/output_p/query-result1.csv");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
